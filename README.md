@@ -9,7 +9,7 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
   - ⚠️ : Pendente
   - 👨🏻‍💻 : Em andamento
 
-#### 📌 74 cursos envolvendo não só desenvolvimento de software, mas também desenvolvimento pessoal
+#### 📌 77 cursos envolvendo não só desenvolvimento de software, mas também desenvolvimento pessoal
 
 ---
 
@@ -113,3 +113,5 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ⚠️[Produtividade parte 1: estratégias para o dia a dia](https://cursos.alura.com.br/course/produtividade-administre-tempo)
 - ⚠️[Produtividade Parte 2: Organização e prioridade](https://cursos.alura.com.br/course/produtividade-organizacao-e-prioridade)
 - ⚠️[Foco: Trazendo mais resultados para o dia a dia](https://cursos.alura.com.br/course/foco-o-poder-do-habito-seu-dia-a-dia)
+
+#### Never Stop Learning 🚀🚀🚀
