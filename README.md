@@ -15,9 +15,9 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 
 ## Cursos de Builds e Controle de versão
 "Aprenda as ferramentas mais utilizadas para desenvolvimento, controle de versão com Git e Github e build da aplicação através de Maven ou MSBuild e outros."
-- 👨🏻‍💻[Git e Github: Controle e compartilhe seu código](https://cursos.alura.com.br/course/git-github-controle-de-versao)
-- ⚠️[Git e Github: Estratégias de ramificação, Conflitos e Pull Requests](https://cursos.alura.com.br/course/git-github-branching-conflitos-pull-requests)
-- ⚠️[Maven: Gerenciamento de dependências e build de aplicações Java](https://cursos.alura.com.br/course/maven-gerenciamento-dependencias-build-aplicacoes-java)
+- ✅[Git e Github: Controle e compartilhe seu código](https://cursos.alura.com.br/course/git-github-controle-de-versao)
+- ✅[Git e Github: Estratégias de ramificação, Conflitos e Pull Requests](https://cursos.alura.com.br/course/git-github-branching-conflitos-pull-requests)
+- 👨🏻‍💻[Maven: Gerenciamento de dependências e build de aplicações Java](https://cursos.alura.com.br/course/maven-gerenciamento-dependencias-build-aplicacoes-java)
 
 ## Java e Orientação a Objetos
 "Aprenda a usar uma das linguagens mais populares no desenvolvimento back-end, mergulhe no paradigma da orientação a objetos e domine as principais bibliotecas do mundo Java."
