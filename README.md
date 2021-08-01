@@ -7,7 +7,7 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - Legendas:
   - ✅ : Feito
   - ⚠️ : Pendente
-  - 👨🏻‍💻 : Em andamento
+  - 🔨 : Em andamento
 
 #### 📌 77 cursos envolvendo não só desenvolvimento de software, mas também desenvolvimento pessoal
 
@@ -17,12 +17,12 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 "Aprenda as ferramentas mais utilizadas para desenvolvimento, controle de versão com Git e Github e build da aplicação através de Maven ou MSBuild e outros."
 - ✅[Git e Github: Controle e compartilhe seu código](https://cursos.alura.com.br/course/git-github-controle-de-versao)
 - ✅[Git e Github: Estratégias de ramificação, Conflitos e Pull Requests](https://cursos.alura.com.br/course/git-github-branching-conflitos-pull-requests)
-- 👨🏻‍💻[Maven: Gerenciamento de dependências e build de aplicações Java](https://cursos.alura.com.br/course/maven-gerenciamento-dependencias-build-aplicacoes-java)
+- ✅[Maven: Gerenciamento de dependências e build de aplicações Java](https://cursos.alura.com.br/course/maven-gerenciamento-dependencias-build-aplicacoes-java)
 
 ## Java e Orientação a Objetos
 "Aprenda a usar uma das linguagens mais populares no desenvolvimento back-end, mergulhe no paradigma da orientação a objetos e domine as principais bibliotecas do mundo Java."
 - ✅[Java JRE e JDK: Escreva o seu primeiro código com Eclipse](https://cursos.alura.com.br/course/java-primeiros-passos)
-- ⚠️[Java OO: Introdução à Orientação a Objetos](https://cursos.alura.com.br/course/java-introducao-orientacao-objetos)
+- 🔨[Java OO: Introdução à Orientação a Objetos](https://cursos.alura.com.br/course/java-introducao-orientacao-objetos)
 - ⚠️[Java Polimorfismo: Entenda herança e interfaces](https://cursos.alura.com.br/course/java-heranca-interfaces-polimorfismo)
 - ⚠️[Java Exceções: Aprenda a criar, lançar e controlar exceções](https://cursos.alura.com.br/course/java-excecoes)
 - ⚠️[Java e java.lang: Programe com a classe Object e String](https://cursos.alura.com.br/course/java-pacotes-e-java-lang)
