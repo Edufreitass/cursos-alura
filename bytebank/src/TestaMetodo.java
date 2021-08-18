@@ -20,6 +20,9 @@ public class TestaMetodo {
         }
         System.out.println(contaDaMarcela.saldo);
         System.out.println(contaDoPaulo.saldo);
+
+        contaDoPaulo.titular = "paulo silveira";
+        System.out.println(contaDoPaulo.titular);
     }
 
 }
