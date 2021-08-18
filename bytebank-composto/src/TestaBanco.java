@@ -10,7 +10,7 @@ public class TestaBanco {
         contaDoPaulo.deposita(100);
         contaDoPaulo.titular = paulo;
 
-        System.out.println(contaDoPaulo.saldo);
+        System.out.println(contaDoPaulo.pegaSaldo());
         System.out.println(contaDoPaulo.titular.nome);
         System.out.println(contaDoPaulo.titular.cpf);
         System.out.println(contaDoPaulo.titular.profissao);
