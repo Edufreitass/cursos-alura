@@ -45,4 +45,12 @@ public class Conta {
     public void setAgencia(int agencia) {
         this.agencia = agencia;
     }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
 }
