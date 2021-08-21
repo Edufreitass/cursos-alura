@@ -1,13 +1,6 @@
-public abstract class Autenticavel {
+public interface Autenticavel {
 
-    private int senha;
+    void setSenha(int senha);
 
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
-
-    public boolean autentica(int senha) {
-        return this.senha == senha;
-    }
-
+    boolean autentica(int senha);
 }
