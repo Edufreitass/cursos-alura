@@ -16,6 +16,8 @@ public class Fluxo {
         System.out.println("Ini do metodo2");
         for (int i = 1; i <= 5; i++) {
             System.out.println(i);
+            // ArithmeticException
+//            int a = i / 0;
         }
         System.out.println("Fim do metodo2");
     }
