@@ -23,9 +23,9 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 "Aprenda a usar uma das linguagens mais populares no desenvolvimento back-end, mergulhe no paradigma da orientação a objetos e domine as principais bibliotecas do mundo Java."
 - ✅[Java JRE e JDK: Escreva o seu primeiro código com Eclipse](https://cursos.alura.com.br/course/java-primeiros-passos)
 - ✅[Java OO: Introdução à Orientação a Objetos](https://cursos.alura.com.br/course/java-introducao-orientacao-objetos)
-- 🔨[Java Polimorfismo: Entenda herança e interfaces](https://cursos.alura.com.br/course/java-heranca-interfaces-polimorfismo)
-- ⚠️[Java Exceções: Aprenda a criar, lançar e controlar exceções](https://cursos.alura.com.br/course/java-excecoes)
-- ⚠️[Java e java.lang: Programe com a classe Object e String](https://cursos.alura.com.br/course/java-pacotes-e-java-lang)
+- ✅[Java Polimorfismo: Entenda herança e interfaces](https://cursos.alura.com.br/course/java-heranca-interfaces-polimorfismo)
+- ✅[Java Exceções: Aprenda a criar, lançar e controlar exceções](https://cursos.alura.com.br/course/java-excecoes)
+- 🔨[Java e java.lang: Programe com a classe Object e String](https://cursos.alura.com.br/course/java-pacotes-e-java-lang)
 - ⚠️[Java e java.util: Coleções, Wrappers e Lambda expressions](https://cursos.alura.com.br/course/java-util-lambdas)
 - ⚠️[Java e java.io: Streams, Reader e Writers](https://cursos.alura.com.br/course/java-trabalhando-com-io)
 - ⚠️[Java Collections: Dominando Listas, Sets e Mapas](https://cursos.alura.com.br/course/java-collections)
