@@ -1,5 +1,7 @@
 package br.com.bytebank.banco.modelo;
 
+import java.util.Objects;
+
 public abstract class Conta {
     protected double saldo;
     private int agencia;
@@ -67,6 +69,19 @@ public abstract class Conta {
 
     public static int getTotal() {
         return Conta.total;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Conta conta = (Conta) o;
+        return agencia == conta.agencia && numero == conta.numero;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(agencia, numero);
     }
 
     @Override
