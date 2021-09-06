@@ -6,11 +6,10 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Teste {
+public class TesteOrdenacao {
 
     public static void main(String[] args) {
 
