@@ -2,6 +2,7 @@ package br.com.alura.java.io.teste;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 
 public class TesteEscritaPrintStreamPrintWriter {
 
@@ -15,7 +16,7 @@ public class TesteEscritaPrintStreamPrintWriter {
 //        BufferedWriter bw = new BufferedWriter(new FileWriter("lorem2.txt"));
 
 //        PrintStream ps = new PrintStream("lorem2.txt");
-        PrintWriter ps = new PrintWriter("lorem2.txt");
+        PrintWriter ps = new PrintWriter("lorem2.txt", StandardCharsets.UTF_8);
 
         ps.println("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
         ps.println();
