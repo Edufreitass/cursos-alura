@@ -28,8 +28,8 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ✅[Java e java.lang: Programe com a classe Object e String](https://cursos.alura.com.br/course/java-pacotes-e-java-lang)
 - ✅[Java e java.util: Coleções, Wrappers e Lambda expressions](https://cursos.alura.com.br/course/java-util-lambdas)
 - ✅[Java e java.io: Streams, Reader e Writers](https://cursos.alura.com.br/course/java-trabalhando-com-io)
-- 🔨[Java Collections: Dominando Listas, Sets e Mapas](https://cursos.alura.com.br/course/java-collections)
-- ⚠️[Java moderno: Tire proveito dos novos recursos do Java 8](https://cursos.alura.com.br/course/java8-lambdas)
+- ✅[Java Collections: Dominando Listas, Sets e Mapas](https://cursos.alura.com.br/course/java-collections)
+- 🔨[Java moderno: Tire proveito dos novos recursos do Java 8](https://cursos.alura.com.br/course/java8-lambdas)
 - ⚠️[TDD e Java: Testes automatizados com JUnit](https://cursos.alura.com.br/course/tdd-java-testes-automatizados-junit)
 
 ## Spring Framework
