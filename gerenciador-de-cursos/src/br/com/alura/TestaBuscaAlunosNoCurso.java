@@ -2,6 +2,17 @@ package br.com.alura;
 
 public class TestaBuscaAlunosNoCurso {
 
+    /**
+     * Conceitos sobre MAP
+     *
+     * Se repetimos uma chave, a chave repetida é sobrescrita pela nova?
+     * R: Se uma chave for repetida, a antiga permanece, porém, o valor é sobrescrito
+     * pelo novo valor contido na chave passada, sendo o antigo valor "esquecido" pelo Map.
+     *
+     * A interface Map mapeia valores para chaves, ou seja, através da chave conseguimos acessar o valor?
+     * R: Ela funciona da seguinte maneira, mapeia valores para chaves, e através da chave conseguimos acessar
+     * o valor correspondente. Por isso ela não pode ser repetida, ao contrário do valor, que podem existir iguais.
+     */
     public static void main(String[] args) {
         Curso javaColecoes = new Curso("Dominando as coleções do Java", "Paulo Silveira");
 
