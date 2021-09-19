@@ -20,10 +20,11 @@ public class TestaCollections {
         nomes.add("Beatriz");
 
         /**
-         * Ordenada a lista especificada em ordem crescente, de acordo com a ordem natural de seus elementos.
+         * Ordena a lista especificada em ordem crescente, conforme a ordem natural de seus elementos.
          */
         Collections.sort(nomes);
         System.out.println("Lista Ordenada: " + nomes);
+        // Saída: Lista Ordenada: [Ana, Beatriz, Carlos, Eduardo, Gabriel, Isaias, João, Marcos, Sara, Tatiana]
 
         /**
          * O método reverse() serve para inverter a ordem de uma lista.
@@ -33,6 +34,7 @@ public class TestaCollections {
          */
         Collections.reverse(nomes);
         System.out.println("Lista Invertida: " + nomes);
+        // Saída: Lista Invertida: [Tatiana, Sara, Marcos, João, Isaias, Gabriel, Eduardo, Carlos, Beatriz, Ana]
 
         /**
          * O método shuffle() serve para embaralhar a ordem de uma lista.
@@ -41,6 +43,7 @@ public class TestaCollections {
          */
         Collections.shuffle(nomes);
         System.out.println("Lista Embaralhada: " + nomes);
+        // Saída: Lista Embaralhada: [Gabriel, Carlos, Marcos, Beatriz, Tatiana, Ana, Eduardo, Isaias, João, Sara]
 
         /**
          * O método singletonList() nos devolve uma lista imutável que contêm um único elemento especificado.
@@ -48,6 +51,7 @@ public class TestaCollections {
          */
         List<String> list = Collections.singletonList("E");
         System.out.println("Lista Imutável: " + list);
+        // Saída: Lista Imutável: [E]
 
         /**
          * O método nCopies() nos retorna uma lista imutável com a quantidade escolhida de um determinado elemento.
@@ -60,5 +64,6 @@ public class TestaCollections {
          */
         List<String> copies = new ArrayList<>(Collections.nCopies(10, (String) null));
         System.out.println(copies);
+        // Saída: [null, null, null, null, null, null, null, null, null, null]
     }
 }
