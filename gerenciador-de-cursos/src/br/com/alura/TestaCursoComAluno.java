@@ -1,5 +1,8 @@
 package br.com.alura;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class TestaCursoComAluno {
 
     public static void main(String[] args) {
@@ -18,9 +21,21 @@ public class TestaCursoComAluno {
         javaColecoes.matricula(a3);
 
         System.out.println("Todos os alunos matriculados: ");
-        javaColecoes.getAlunos().forEach(aluno -> {
-            System.out.println(aluno);
-        });
+//        javaColecoes.getAlunos().forEach(aluno -> {
+//            System.out.println(aluno);
+//        });
+
+//        for (Aluno aluno : javaColecoes.getAlunos()) {
+//            System.out.println(aluno);
+//        }
+
+        Set<Aluno> alunos = javaColecoes.getAlunos();
+        Iterator<Aluno> iterador = alunos.iterator();
+        // Forma legada de imprimir uma coleção
+        while (iterador.hasNext()) {
+            Aluno proximoAluno = iterador.next();
+            System.out.println(proximoAluno);
+        }
 
         System.out.println("O aluno " + a1 + " está matriculado?");
         System.out.println(javaColecoes.estaMatriculado(a1));

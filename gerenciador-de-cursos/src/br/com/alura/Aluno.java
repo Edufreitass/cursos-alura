@@ -1,6 +1,6 @@
 package br.com.alura;
 
-public class Aluno {
+public class Aluno implements Comparable<Aluno> {
 
     private String nome;
     private int numeroMatricula;
@@ -35,5 +35,10 @@ public class Aluno {
     @Override
     public String toString() {
         return "[Aluno: " + this.nome + ", matricula: " + this.numeroMatricula + "]";
+    }
+
+    @Override
+    public int compareTo(Aluno outroAluno) {
+        return this.nome.compareTo(outroAluno.nome);
     }
 }
