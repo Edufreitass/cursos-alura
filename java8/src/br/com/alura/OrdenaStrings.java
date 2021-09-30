@@ -30,5 +30,8 @@ public class OrdenaStrings {
         palavras.forEach(impressor);
 
         palavras.forEach(s -> System.out.println(s));
+
+        // Thread com lambda!
+        new Thread(() -> System.out.println("Executando um Runnable")).start();
     }
 }
