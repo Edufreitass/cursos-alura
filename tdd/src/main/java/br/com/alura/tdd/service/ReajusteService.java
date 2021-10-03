@@ -16,5 +16,9 @@ public class ReajusteService {
             BigDecimal reajuste = funcionario.getSalario().multiply(new BigDecimal("0.15"));
             funcionario.reajustarSalario(reajuste);
         }
+        if (desempenho == Desempenho.OTIMO) {
+            BigDecimal reajuste = funcionario.getSalario().multiply(new BigDecimal("0.20"));
+            funcionario.reajustarSalario(reajuste);
+        }
     }
 }
