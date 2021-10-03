@@ -4,7 +4,6 @@ package br.com.alura.threads;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.math.BigInteger;
 
 public class AcaoBotao implements ActionListener {
 
@@ -20,18 +19,8 @@ public class AcaoBotao implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
-        long valor1 = Long.parseLong(primeiro.getText());
-        long valor2 = Long.parseLong(segundo.getText());
-
-        BigInteger calculo = new BigInteger("0");
-
-        for (int i = 0; i < valor1; i++) {
-            for (int j = 0; j < valor2; j++) {
-                calculo = calculo.add(new BigInteger("1"));
-            }
-        }
-
-        resultado.setText(calculo.toString());
+        Runnable tarefa = new TarefaMultiplicacao(primeiro, segundo, resultado);
+        Thread threadCalculo = new Thread(tarefa, "Thread Calculador");
+        threadCalculo.start();
     }
 }
