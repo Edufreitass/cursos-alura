@@ -12,17 +12,15 @@ public class Banheiro {
         synchronized (this) {
             System.out.println(nome + " entrando no banheiro");
 
-            if (ehSujo) {
+            while (ehSujo) {
                 esperaLaFora(nome);
             }
 
             System.out.println(nome + " fazendo coisa rapida");
 
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            dormeUmPouco(5000);
+
+            this.ehSujo = true;
 
             System.out.println(nome + " dando descarga");
             System.out.println(nome + " lavando mao");
@@ -38,17 +36,15 @@ public class Banheiro {
         synchronized (this) {
             System.out.println(nome + " entrando no banheiro");
 
-            if (ehSujo) {
+            while (ehSujo) {
                 esperaLaFora(nome);
             }
 
             System.out.println(nome + " fazendo coisa demorada");
 
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            dormeUmPouco(10000);
+
+            this.ehSujo = true;
 
             System.out.println(nome + " dando descarga");
             System.out.println(nome + " lavando mao");
@@ -72,11 +68,7 @@ public class Banheiro {
             System.out.println(nome + " limpando banheiro");
             this.ehSujo = false;
 
-            try {
-                Thread.sleep(13000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            dormeUmPouco(13000);
 
             this.notifyAll();
 
@@ -88,6 +80,14 @@ public class Banheiro {
         System.out.println(nome + ", eca, o banheiro tá sujo");
         try {
             this.wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void dormeUmPouco(long millis) {
+        try {
+            Thread.sleep(millis);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
