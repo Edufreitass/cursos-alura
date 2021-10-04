@@ -70,6 +70,7 @@ public class Banheiro {
 
             dormeUmPouco(13000);
 
+            // uma thread esperando pode ser notificada pelo método object.notifyAll()
             this.notifyAll();
 
             System.out.println(nome + " saindo do banheiro");
@@ -79,6 +80,8 @@ public class Banheiro {
     private void esperaLaFora(String nome) {
         System.out.println(nome + ", eca, o banheiro tá sujo");
         try {
+            // ao chamar object.wait() a thread fica no estado de espera
+            // estado de espera significa WAITING no mundo de threads
             this.wait();
         } catch (InterruptedException e) {
             e.printStackTrace();
