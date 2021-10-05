@@ -9,8 +9,6 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
   - ⚠️ : Pendente
   - 🔨 : Em andamento
 
-#### 📌 77 cursos envolvendo não só desenvolvimento de software, mas também desenvolvimento pessoal
-
 ---
 
 ## Cursos de Builds e Controle de versão
@@ -34,8 +32,8 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 
 ## Programação paralela
 "Duas tarefas ao mesmo tempo."
-- 🔨 [Threads em Java 1: Programação paralela](https://cursos.alura.com.br/course/threads-java-1)
-- ⚠️ [Threads em Java 2: Programação concorrente avançada](https://cursos.alura.com.br/course/threads-java-2)
+- ✅ [Threads em Java 1: Programação paralela](https://cursos.alura.com.br/course/threads-java-1)
+- 🔨 [Threads em Java 2: Programação concorrente avançada](https://cursos.alura.com.br/course/threads-java-2)
 
 ## Spring Framework
 "Crie modernas aplicações web Java com o Spring Framework. Aprenda a programar do acesso ao banco de dados, com Spring Data, até a aplicação web, com Spring MVC, e publicação da API REST, tudo com o framework mais popular do mundo Java."
