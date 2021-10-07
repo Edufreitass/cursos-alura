@@ -30,6 +30,11 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ✅[Java moderno: Tire proveito dos novos recursos do Java 8](https://cursos.alura.com.br/course/java8-lambdas)
 - ✅[TDD e Java: Testes automatizados com JUnit](https://cursos.alura.com.br/course/tdd-java-testes-automatizados-junit)
 
+## Java Reflection
+"Entendendo a metaprogramação"
+- ⚠️ [Java Reflection parte 1: Entendendo a metaprogramação](https://cursos.alura.com.br/course/java-reflection-meta-programacao)
+- ⚠️ [Java Reflection parte 2: Anotações e Injeção de Dependências](https://cursos.alura.com.br/course/java-reflection-anotacoes-injecao-dependencia)
+
 ## Programação paralela
 "Duas tarefas ao mesmo tempo."
 - ✅ [Threads em Java 1: Programação paralela](https://cursos.alura.com.br/course/threads-java-1)
