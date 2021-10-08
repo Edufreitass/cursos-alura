@@ -2,7 +2,7 @@ package br.com.alura.threads;
 
 public class ServidorDeTeste {
 
-    private boolean estaRodando = false;
+    private volatile boolean estaRodando = false;
 
     public static void main(String[] args) throws InterruptedException {
         ServidorDeTeste servidor = new ServidorDeTeste();
