@@ -41,9 +41,7 @@ public class DistribuirTarefas implements Runnable {
                         ComandoC2AcessaBanco c2Banco = new ComandoC2AcessaBanco(saidaCliente);
                         Future<String> futureWebService = this.threadPool.submit(c2WebService);
                         Future<String> futureBanco = this.threadPool.submit(c2Banco);
-
-                        String resultadoWebService = futureWebService.get();
-
+                        this.threadPool.submit(new JuntaResultadosFutureWebServiceEFutureBanco(futureWebService, futureBanco, saidaCliente));
                         break;
                     case "fim":
                         saidaCliente.println("Desligando o servidor");
