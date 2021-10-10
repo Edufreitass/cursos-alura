@@ -32,13 +32,13 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 
 ## Java Reflection
 "Entendendo a metaprogramação"
-- ⚠️ [Java Reflection parte 1: Entendendo a metaprogramação](https://cursos.alura.com.br/course/java-reflection-meta-programacao)
+- 🔨 [Java Reflection parte 1: Entendendo a metaprogramação](https://cursos.alura.com.br/course/java-reflection-meta-programacao)
 - ⚠️ [Java Reflection parte 2: Anotações e Injeção de Dependências](https://cursos.alura.com.br/course/java-reflection-anotacoes-injecao-dependencia)
 
 ## Programação paralela
 "Duas tarefas ao mesmo tempo."
 - ✅ [Threads em Java 1: Programação paralela](https://cursos.alura.com.br/course/threads-java-1)
-- 🔨 [Threads em Java 2: Programação concorrente avançada](https://cursos.alura.com.br/course/threads-java-2)
+- ✅ [Threads em Java 2: Programação concorrente avançada](https://cursos.alura.com.br/course/threads-java-2)
 
 ## Spring Framework
 "Crie modernas aplicações web Java com o Spring Framework. Aprenda a programar do acesso ao banco de dados, com Spring Data, até a aplicação web, com Spring MVC, e publicação da API REST, tudo com o framework mais popular do mundo Java."
