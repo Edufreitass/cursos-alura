@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public class TesteInstanciaObjetoCorretamente {
 
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException {
 
         Class<SubControle> subControleClasse1 = SubControle.class;
 
@@ -17,14 +17,23 @@ public class TesteInstanciaObjetoCorretamente {
         Class<?> controleClasse1 =
                 Class.forName("br.com.alura.alurator.playground.controle.Controle");
 
-        Constructor<SubControle> construtorSubControle =
-                subControleClasse1.getDeclaredConstructor();
+        try {
+            controleClasse1.getDeclaredConstructor().newInstance();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+            System.out.println(e.getTargetException());
+        }
 
-        System.out.println(construtorSubControle);
+//        controleClasse1.newInstance();
 
-        construtorSubControle.setAccessible(true);
-        Object subControle = construtorSubControle.newInstance();
-
-        System.out.println(subControle);
+//        Constructor<SubControle> construtorSubControle =
+//                subControleClasse1.getDeclaredConstructor();
+//
+//        System.out.println(construtorSubControle);
+//
+//        construtorSubControle.setAccessible(true);
+//        Object subControle = construtorSubControle.newInstance();
+//
+//        System.out.println(subControle);
     }
 }
