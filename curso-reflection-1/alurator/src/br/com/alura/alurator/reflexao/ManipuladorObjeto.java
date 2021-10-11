@@ -14,16 +14,18 @@ public class ManipuladorObjeto {
 
     public ManipuladorMetodo getMetodo(String nomeMetodo, Map<String, Object> params) {
         Stream<Method> metodos = Stream.of(instancia.getClass().getDeclaredMethods());
-        Method metodoSelecionado = metodos.filter(metodo -> true)
+        Method metodoSelecionado = metodos.filter(metodo ->
+                                                metodo.getName().equals(nomeMetodo)
+                                                && metodo.getParameterCount() == params.values().size()
+                                                && Stream.of(metodo.getParameters())
+                                                    .allMatch(arg ->
+                                                        params.keySet().contains(arg.getName())
+                                                        && params.get(arg.getName()).getClass().equals(arg.getType())
+                                                    )
+                                            )
                                             .findFirst()
                                             .orElseThrow(() -> new RuntimeException("Metodo nao encontrado"));
 
-        try {
-            Method metodo = instancia.getClass().getDeclaredMethod(nomeMetodo);
-            return new ManipuladorMetodo(instancia, metodo);
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
+        return new ManipuladorMetodo(instancia, metodoSelecionado, params);
     }
 }
