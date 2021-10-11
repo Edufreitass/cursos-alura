@@ -14,13 +14,20 @@ public class Alurator {
     public Object executa(String url) {
         Request request = new Request(url);
         String nomeControle = request.getNomeControle();
+        String nomeMetodo = request.getNomeMetodo();
 
-        Object instanciaControle = new Reflexao()
+//        Object instanciaControle = new Reflexao()
+//                .refleteClasse(pacoteBase + nomeControle)
+//                .getConstrutorPadrao()
+//                .invoca();
+
+        Object retorno = new Reflexao()
                 .refleteClasse(pacoteBase + nomeControle)
-                .getConstrutorPadrao()
+                .criaInstancia()
+                .getMetodo(nomeMetodo)
                 .invoca();
 
-        System.out.println(instanciaControle);
-        return null;
+        System.out.println(retorno);
+        return retorno;
     }
 }
