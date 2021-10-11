@@ -32,8 +32,8 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 
 ## Java Reflection
 "Entendendo a metaprogramação"
-- 🔨 [Java Reflection parte 1: Entendendo a metaprogramação](https://cursos.alura.com.br/course/java-reflection-meta-programacao)
-- ⚠️ [Java Reflection parte 2: Anotações e Injeção de Dependências](https://cursos.alura.com.br/course/java-reflection-anotacoes-injecao-dependencia)
+- ✅ [Java Reflection parte 1: Entendendo a metaprogramação](https://cursos.alura.com.br/course/java-reflection-meta-programacao)
+- 🔨 [Java Reflection parte 2: Anotações e Injeção de Dependências](https://cursos.alura.com.br/course/java-reflection-anotacoes-injecao-dependencia)
 
 ## Programação paralela
 "Duas tarefas ao mesmo tempo."
