@@ -1,6 +1,8 @@
 package br.com.alura.alurator.reflexao;
 
 import java.lang.reflect.Method;
+import java.util.Map;
+import java.util.stream.Stream;
 
 public class ManipuladorObjeto {
 
@@ -10,7 +12,12 @@ public class ManipuladorObjeto {
         this.instancia = instancia;
     }
 
-    public ManipuladorMetodo getMetodo(String nomeMetodo) {
+    public ManipuladorMetodo getMetodo(String nomeMetodo, Map<String, Object> params) {
+        Stream<Method> metodos = Stream.of(instancia.getClass().getDeclaredMethods());
+        Method metodoSelecionado = metodos.filter(metodo -> true)
+                                            .findFirst()
+                                            .orElseThrow(() -> new RuntimeException("Metodo nao encontrado"));
+
         try {
             Method metodo = instancia.getClass().getDeclaredMethod(nomeMetodo);
             return new ManipuladorMetodo(instancia, metodo);
