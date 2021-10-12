@@ -1,5 +1,7 @@
 package br.com.alura.alurator.conversor;
 
+import br.com.alura.alurator.conversor.anotacao.NomeTagXml;
+
 import java.lang.reflect.Field;
 import java.util.Collection;
 
@@ -22,13 +24,19 @@ public class ConversorXML {
 
                 xmlBuilder.append("</lista>");
             } else {
-                String nomeClasse = classeObjeto.getName();
+                NomeTagXml anotacaoClasse = classeObjeto.getDeclaredAnnotation(NomeTagXml.class);
+
+                String nomeClasse = anotacaoClasse == null ? classeObjeto.getName() : anotacaoClasse.value();
 
                 xmlBuilder.append("<" + nomeClasse + ">");
 
                 for (Field atributo : classeObjeto.getDeclaredFields()) {
                     atributo.setAccessible(true);
-                    String nomeAtributo = atributo.getName();
+
+                    NomeTagXml anotacaoAtributo = atributo.getDeclaredAnnotation(NomeTagXml.class);
+
+                    String nomeAtributo = anotacaoAtributo == null ? atributo.getName() : anotacaoAtributo.value();
+
                     Object valorAtributo = atributo.get(objeto);
 
                     xmlBuilder.append("<" + nomeAtributo + ">");
@@ -36,7 +44,7 @@ public class ConversorXML {
                     xmlBuilder.append("</" + nomeAtributo + ">");
                 }
 
-                xmlBuilder.append("<" + nomeClasse + ">");
+                xmlBuilder.append("</" + nomeClasse + ">");
             }
 
             return xmlBuilder.toString();
