@@ -38,8 +38,8 @@ public class Funcionario {
         return cargo;
     }
 
-    public void setCargo(Cargo cargo) {
-        this.cargo = cargo;
+    public void promover(Cargo novoCargo) {
+        this.cargo = novoCargo;
     }
 
     public BigDecimal getSalario() {
