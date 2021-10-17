@@ -79,7 +79,7 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 
 ## Arquitetura e Design de Projetos Java
 "Modelo o seu projeto usando boas práticas e padrões de projeto como o SOLID. Use BDD e DDD e saiba as vantagens da Clean Architecture."
-- 🔨[SOLID com Java: Princípios da programação orientada a objetos](https://cursos.alura.com.br/course/solid-orientacao-objetos-java)
+- ✅[SOLID com Java: Princípios da programação orientada a objetos](https://cursos.alura.com.br/course/solid-orientacao-objetos-java)
 - ⚠️[Design Patterns em Java I: Introdução às boas práticas de programação](https://cursos.alura.com.br/course/introducao-design-patterns-java)
 - ⚠️[Design Patterns em Java II: Avançando nas boas práticas de programação](https://cursos.alura.com.br/course/avancando-design-patterns-java)
 - ⚠️[Testes de Integração: Testes de SQL e DAOs automatizados em Java](https://cursos.alura.com.br/course/teste-integracao-sql-daos-automatizados-java)
