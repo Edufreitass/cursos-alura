@@ -2,7 +2,7 @@ package br.com.alura.loja.orcamento;
 
 import java.math.BigDecimal;
 
-public class ItemOrcamento {
+public class ItemOrcamento implements Orcavel {
 
     private final BigDecimal valor;
 
@@ -10,6 +10,7 @@ public class ItemOrcamento {
         this.valor = valor;
     }
 
+    @Override
     public BigDecimal getValor() {
         return valor;
     }
