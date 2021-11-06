@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class RegistroDeOrcamento {
 
-    private HttpAdapter http;
+    private final HttpAdapter http;
 
     public RegistroDeOrcamento(HttpAdapter http) {
         this.http = http;

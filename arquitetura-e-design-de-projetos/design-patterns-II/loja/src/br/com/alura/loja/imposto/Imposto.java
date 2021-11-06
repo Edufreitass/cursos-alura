@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 public abstract class Imposto {
 
-    private Imposto outro;
+    private final Imposto outro;
 
     public Imposto(Imposto outro) {
         this.outro = outro;

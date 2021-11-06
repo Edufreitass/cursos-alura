@@ -6,9 +6,9 @@ import br.com.alura.loja.orcamento.Orcamento;
 
 public class Pedido {
 
-	private String cliente;
-	private LocalDateTime data;
-	private Orcamento orcamento;
+	private final String cliente;
+	private final LocalDateTime data;
+	private final Orcamento orcamento;
 
 	public Pedido(String cliente, LocalDateTime data, Orcamento orcamento) {
 		this.cliente = cliente;

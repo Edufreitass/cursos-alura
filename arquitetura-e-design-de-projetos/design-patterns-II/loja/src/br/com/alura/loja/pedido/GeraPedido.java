@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 
 public class GeraPedido {
 
-	private String cliente;
-	private BigDecimal valorOrcamento;
-	private int quantidadeItens;
+	private final String cliente;
+	private final BigDecimal valorOrcamento;
+	private final int quantidadeItens;
 
 	public GeraPedido(String cliente, BigDecimal valorOrcamento, int quantidadeItens) {
 		this.cliente = cliente;
