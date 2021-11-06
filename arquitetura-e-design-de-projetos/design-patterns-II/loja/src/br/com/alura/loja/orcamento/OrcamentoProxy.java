@@ -13,7 +13,7 @@ public class OrcamentoProxy extends Orcamento {
 
     @Override
     public BigDecimal getValor() {
-        if (valor == null) {
+        if (this.valor == null) {
             this.valor = orcamento.getValor();
         }
         return this.valor;

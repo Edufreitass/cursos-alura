@@ -10,13 +10,11 @@ import java.util.List;
 
 public class Orcamento implements Orcavel {
 
-	private BigDecimal valor;
+	private List<Orcavel> itens = new ArrayList<>();
+	private BigDecimal valor = BigDecimal.ZERO;
 	private SituacaoOrcamento situacao;
-	private final List<Orcavel> itens;
 
 	public Orcamento() {
-		this.valor = BigDecimal.ZERO;
-		this.itens = new ArrayList<>();
 		this.situacao = new EmAnalise();
 	}
 
@@ -37,14 +35,13 @@ public class Orcamento implements Orcavel {
 		this.situacao.finalizar(this);
 	}
 
-	@Override
 	public BigDecimal getValor() {
 		try {
 			Thread.sleep(2000);
+			return this.valor;
 		} catch (InterruptedException e) {
 			throw new RuntimeException(e);
 		}
-		return valor;
 	}
 
 	public int getQuantidadeItens() {
@@ -60,11 +57,11 @@ public class Orcamento implements Orcavel {
 	}
 
 	public boolean isFinalizado() {
-		return situacao instanceof Finalizado;
+		return this.situacao instanceof Finalizado;
 	}
 
-    public void adicionarItem(Orcavel item) {
-        this.valor = valor.add(item.getValor());
-        this.itens.add(item);
-    }
+	public void adicionarItem(Orcavel item) {
+		this.valor = this.valor.add(item.getValor());
+		this.itens.add(item);
+	}
 }
