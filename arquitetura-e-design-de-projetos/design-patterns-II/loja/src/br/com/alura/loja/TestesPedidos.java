@@ -22,7 +22,30 @@ public class TestesPedidos {
 				new CriarPedidoNoBanco(),
 				new LogDePedido()));
 
+		// Facade
 		handler.executar(gerador);
+
+		/*
+		// Sem utilizar o padrão Facade
+		Conta minhaConta = new Conta();
+		Conta outra = new Conta();
+
+		BigDecimal valorTransferencia = new BigDecimal("100");
+		Transferencia transferencia = new Transferencia();
+		transferencia.validarConta(minhaConta);
+		transferencia.validarConta(outra);
+		transferencia.checarSaldo(minhaConta, valorTransferencia);
+		transferencia.executar(minhaConta, outra, valorTransferencia);
+
+		// Utilizando o padrão Facade
+		Conta minhaConta = new Conta();
+		Conta outra = new Conta();
+
+		BigDecimal valorTransferencia = new BigDecimal("100");
+		Transferencia transferencia = new Transferencia();
+		// executar é um método de "fachada"
+		transferencia.executar(minhaConta, outra, valorTransferencia);
+		*/
 	}
 
 }
