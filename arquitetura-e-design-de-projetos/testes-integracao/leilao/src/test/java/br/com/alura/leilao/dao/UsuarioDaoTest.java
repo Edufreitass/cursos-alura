@@ -2,42 +2,47 @@ package br.com.alura.leilao.dao;
 
 import br.com.alura.leilao.model.Usuario;
 import br.com.alura.leilao.util.JPAUtil;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 class UsuarioDaoTest {
 
     private UsuarioDao dao;
+    private EntityManager em;
+
+    @BeforeEach
+    public void setUp() {
+        this.em = JPAUtil.getEntityManager();
+        this.dao = new UsuarioDao(em);
+        em.getTransaction().begin();
+    }
+
+    @AfterEach
+    public void tearDown() {
+        em.getTransaction().rollback();
+    }
 
     @Test
     void deveriaEncontrarUsuarioCadastrado() {
-        EntityManager em = JPAUtil.getEntityManager();
-        this.dao = new UsuarioDao(em);
-
-        Usuario usuario = new Usuario("fulano", "fulano@email.com", "12345678");
-        em.getTransaction().begin();
-        em.persist(usuario);
-        em.getTransaction().commit();
-
+        Usuario usuario = criarUsuario();
         Usuario encontrado = dao.buscarPorUsername(usuario.getNome());
-        assertNotNull(encontrado);
+        Assertions.assertNotNull(encontrado);
     }
 
     @Test
     void naoDeveriaEncontrarUsuarioNaoCadastrado() {
-        EntityManager em = JPAUtil.getEntityManager();
-        this.dao = new UsuarioDao(em);
+        criarUsuario();
+        Assertions.assertThrows(NoResultException.class, () -> this.dao.buscarPorUsername("beltrano"));
+    }
 
+    private Usuario criarUsuario() {
         Usuario usuario = new Usuario("fulano", "fulano@email.com", "12345678");
-        em.getTransaction().begin();
         em.persist(usuario);
-        em.getTransaction().commit();
-
-        assertThrows(NoResultException.class, () -> this.dao.buscarPorUsername("beltrano"));
+        return usuario;
     }
 }
