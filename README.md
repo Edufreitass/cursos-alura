@@ -84,7 +84,7 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ✅[Design Patterns em Java II: Avançando nas boas práticas de programação](https://cursos.alura.com.br/course/avancando-design-patterns-java)
 - ✅[Testes de Integração: Testes de SQL e DAOs automatizados em Java](https://cursos.alura.com.br/course/teste-integracao-sql-daos-automatizados-java)
 - ✅[Selenium: Testes automatizados de aceitação em Java](https://cursos.alura.com.br/course/selenium-testes-automatizados-aceitacao-java)
-- ⚠️[BDD e Java: Behavior Driven Development com Cucumber](https://cursos.alura.com.br/course/bdd-cucumber-java)
+- 🔨[BDD e Java: Behavior Driven Development com Cucumber](https://cursos.alura.com.br/course/bdd-cucumber-java)
 - ⚠️[Java e Clean Architecture: Descomplicando arquitetura de software](https://cursos.alura.com.br/course/java-clean-architecture)
 - ⚠️[Java e Domain Driven Design: Apresentando os conceitos](https://cursos.alura.com.br/course/java-domain-driven-design-conceitos)
 
