@@ -1,4 +1,4 @@
-package br.com.alura.leilao.acceptance.steps;
+/*package br.com.alura.leilao.acceptance.steps;
 
 import br.com.alura.leilao.e2e.pages.Browser;
 import br.com.alura.leilao.e2e.pages.LeiloesPage;
@@ -34,8 +34,8 @@ public class LeilaoStepsComLambda implements io.cucumber.java8.Pt {
         });
 
         Entao("o novo leilao aparece na tabela", () -> {
-            this.leiloesPage.existe("PC Novo", "1500", "fulano");
+            this.leiloesPage.existe("PC Novo", "1500", "01/11/2020", "fulano");
             this.browser.clean();
         });
     }
-}
+}*/
