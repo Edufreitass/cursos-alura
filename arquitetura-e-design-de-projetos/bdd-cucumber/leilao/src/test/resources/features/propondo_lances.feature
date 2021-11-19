@@ -14,11 +14,11 @@ Funcionalidade: : Propondo lances ao leilao
     Entao os lances sao aceitos
 
   Esquema do Cenario: Propondo um lance invalido
-    Dado um lance invalido de <valor> reais
+    Dado um lance invalido de <valor> reais e do usuario '<nomeUsuario>'
     Quando propoe ao leilao
     Entao o lance nao eh aceito
 
     Exemplos:
-      | valor |
-      | 0.0   |
-      | -1.0  |
+      | valor | nomeUsuario |
+      | 0.0   | beltrano    |
+      | -1.0  | cigano      |

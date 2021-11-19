@@ -1,5 +1,9 @@
 package br.com.alura.leilao.model;
 
+import javax.persistence.*;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -7,18 +11,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 @Entity
 public class Leilao {
@@ -52,13 +44,13 @@ public class Leilao {
 	public Leilao(@NotNull @NotBlank String nome) {
 		this.nome = nome;
 	}
-	
+
 	public Leilao(@NotBlank String nome, @NotNull @DecimalMin("0.1") BigDecimal valorInicial, @NotNull LocalDate dataAbertura) {
 		this.nome = nome;
 		this.valorInicial = valorInicial;
 		this.dataAbertura = dataAbertura;
 	}
-	
+
 
 	public Leilao(@NotNull @NotBlank String nome, @NotNull @DecimalMin("0.1") BigDecimal valorInicial,
 			@NotNull Usuario usuario) {
@@ -97,8 +89,8 @@ public class Leilao {
 			      .atZone(ZoneId.systemDefault())
 			      .toInstant());
 	}
-	
-	
+
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -128,12 +120,20 @@ public class Leilao {
 	}
 
 	public boolean propoe(Lance lanceAtual) {
-		
+
+		if (!ehValido(lanceAtual)) {
+			return false;
+		}
+
 		if (this.estaSemLances() || ehUmLanceValido(lanceAtual)) {
 			adicionarLance(lanceAtual);
 			return true;
 		}
 		return false;
+	}
+
+	private boolean ehValido(Lance lance) {
+		return lance.getValor().compareTo(BigDecimal.ZERO) > 0;
 	}
 
 	private void adicionarLance(Lance lance) {
@@ -142,8 +142,8 @@ public class Leilao {
 	}
 
 	private boolean ehUmLanceValido(Lance lance) {
-		return valorEhMaior(lance, ultimoLanceDado()) && 
-				oUltimoUsuarioNaoEhOMesmoDo(lance) && 
+		return valorEhMaior(lance, ultimoLanceDado()) &&
+				oUltimoUsuarioNaoEhOMesmoDo(lance) &&
 				totalDeLancesDoUsuarioEhMenorIgual5(lance.getUsuario());
 	}
 
@@ -170,7 +170,7 @@ public class Leilao {
 		}
 		return total;
 	}
-	
+
 	private boolean estaSemLances() {
 		return this.lances.isEmpty();
 	}
