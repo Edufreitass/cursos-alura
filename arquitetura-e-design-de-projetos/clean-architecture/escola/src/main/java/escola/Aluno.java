@@ -36,12 +36,4 @@ public class Aluno {
     public Email getEmail() {
         return email;
     }
-
-    public static void main(String[] args) {
-        Aluno a = new Aluno(
-                new Cpf("123"),
-                "Fulano da Silva",
-                new Email("email")
-        );
-    }
 }
