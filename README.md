@@ -44,7 +44,6 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 "Crie modernas aplicações web Java com o Spring Framework. Aprenda a programar do acesso ao banco de dados, com Spring Data, até a aplicação web, com Spring MVC, e publicação da API REST, tudo com o framework mais popular do mundo Java."
 - ⚠️[Java Servlet: Fundamentos da programação web Java](https://cursos.alura.com.br/course/servlets-fundamentos-programacao-web-java)
 - ⚠️[Java Servlet: Autenticação, autorização e o padrão MVC](https://cursos.alura.com.br/course/servlet-autenticacao-autorizacao-mvc)
-- ⚠️[Maven: Gerenciamento de dependências e build de aplicações Java](https://cursos.alura.com.br/course/maven-gerenciamento-dependencias-build-aplicacoes-java)
 - ⚠️[Java e JDBC: Trabalhando com um banco de dados](https://cursos.alura.com.br/course/jdbc-dao-persistencia)
 - ⚠️[Persistência com JPA: Introdução ao Hibernate](https://cursos.alura.com.br/course/persistencia-jpa-introducao-hibernate)
 - ⚠️[Java e JPA: Consultas avançadas, performance e modelos complexos](https://cursos.alura.com.br/course/java-jpa-consultas-avancadas-performance-modelos-complexos)
@@ -85,8 +84,8 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ✅[Testes de Integração: Testes de SQL e DAOs automatizados em Java](https://cursos.alura.com.br/course/teste-integracao-sql-daos-automatizados-java)
 - ✅[Selenium: Testes automatizados de aceitação em Java](https://cursos.alura.com.br/course/selenium-testes-automatizados-aceitacao-java)
 - ✅[BDD e Java: Behavior Driven Development com Cucumber](https://cursos.alura.com.br/course/bdd-cucumber-java)
-- 🔨[Java e Clean Architecture: Descomplicando arquitetura de software](https://cursos.alura.com.br/course/java-clean-architecture)
-- ⚠️[Java e Domain Driven Design: Apresentando os conceitos](https://cursos.alura.com.br/course/java-domain-driven-design-conceitos)
+- ✅[Java e Clean Architecture: Descomplicando arquitetura de software](https://cursos.alura.com.br/course/java-clean-architecture)
+- 🔨[Java e Domain Driven Design: Apresentando os conceitos](https://cursos.alura.com.br/course/java-domain-driven-design-conceitos)
 
 ## Certificação Java
 "Prepare-se e aprenda tudo o que precisa para tirar a certificação Java OCJP I."
