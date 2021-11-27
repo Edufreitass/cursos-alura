@@ -2,6 +2,7 @@ package br.com.alura.forum.modelo;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Getter
 @EqualsAndHashCode
+@NoArgsConstructor
 @Entity
 public class Topico {
 
@@ -32,10 +34,4 @@ public class Topico {
 
     @OneToMany(mappedBy = "topico")
     private List<Resposta> respostas = new ArrayList<>();
-
-    public Topico(String titulo, String mensagem, Curso curso) {
-        this.titulo = titulo;
-        this.mensagem = mensagem;
-        this.curso = curso;
-    }
 }
