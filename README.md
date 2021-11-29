@@ -50,9 +50,9 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ⚠️[Spring Data JPA: Repositórios, Consultas, Projeções e Specifications](https://cursos.alura.com.br/course/spring-data-jpa)
 - ⚠️[Spring MVC: Crie um web app com Thymeleaf e Bootstrap](https://cursos.alura.com.br/course/spring-mvc-thymeleaf-bootstrap)
 - ⚠️[Spring MVC: Autenticação com Spring Security, API Rest e AJAX](https://cursos.alura.com.br/course/spring-mvc-security-rest-vuejs-ajax)
-- 🔨[Spring Boot API REST: Construa uma API](https://cursos.alura.com.br/course/spring-boot-api-rest)
-- ⚠️[Spring Boot API Rest: Segurança da API, Cache e Monitoramento](https://cursos.alura.com.br/course/spring-boot-seguranca-cache-monitoramento)
-- ⚠️[Spring Boot e Teste: Profiles, Testes e Deploy](https://cursos.alura.com.br/course/spring-boot-profiles-testes-deploy)
+- ✅[Spring Boot API REST: Construa uma API](https://cursos.alura.com.br/course/spring-boot-api-rest)
+- ✅[Spring Boot API Rest: Segurança da API, Cache e Monitoramento](https://cursos.alura.com.br/course/spring-boot-seguranca-cache-monitoramento)
+- 🔨[Spring Boot e Teste: Profiles, Testes e Deploy](https://cursos.alura.com.br/course/spring-boot-profiles-testes-deploy)
 
 ## Java EE
 "Você vai estudar e praticar com a JPA2 e Hibernate dentro da Java EE, fará uma aplicação web com JSF2 e CDI"
