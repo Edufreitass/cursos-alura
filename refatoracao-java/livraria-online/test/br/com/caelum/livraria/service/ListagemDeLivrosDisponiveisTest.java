@@ -8,11 +8,13 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import br.com.caelum.livraria.dominio.Livros;
 import br.com.caelum.livraria.dominio.TodosLivros;
 
+@Ignore
 public class ListagemDeLivrosDisponiveisTest {
 	
 	private ListagemDeLivrosDisponiveis servico;

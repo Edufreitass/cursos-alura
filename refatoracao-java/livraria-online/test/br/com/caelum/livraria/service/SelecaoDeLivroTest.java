@@ -17,12 +17,14 @@ import static org.mockito.Mockito.when;
 
 import org.javamoney.moneta.Money;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import br.com.caelum.livraria.dominio.CalculadoraFrete;
 import br.com.caelum.livraria.dominio.CarrinhoDeCompras;
 import br.com.caelum.livraria.dominio.TodosLivros;
 
+@Ignore
 public class SelecaoDeLivroTest {
 	
 	private TodosLivros todosLivros;
