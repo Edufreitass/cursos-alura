@@ -52,7 +52,7 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ⚠️[Spring MVC: Autenticação com Spring Security, API Rest e AJAX](https://cursos.alura.com.br/course/spring-mvc-security-rest-vuejs-ajax)
 - ✅[Spring Boot API REST: Construa uma API](https://cursos.alura.com.br/course/spring-boot-api-rest)
 - ✅[Spring Boot API Rest: Segurança da API, Cache e Monitoramento](https://cursos.alura.com.br/course/spring-boot-seguranca-cache-monitoramento)
-- 🔨[Spring Boot e Teste: Profiles, Testes e Deploy](https://cursos.alura.com.br/course/spring-boot-profiles-testes-deploy)
+- ✅[Spring Boot e Teste: Profiles, Testes e Deploy](https://cursos.alura.com.br/course/spring-boot-profiles-testes-deploy)
 
 ## Java EE
 "Você vai estudar e praticar com a JPA2 e Hibernate dentro da Java EE, fará uma aplicação web com JSF2 e CDI"
@@ -98,6 +98,10 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 - ⚠️[Certificação Java SE 7 Programmer I: Relações entre classes](https://cursos.alura.com.br/course/certificacao-java-heranca)
 - ⚠️[Certificação Java SE 7 Programmer I: Lidando com exceções](https://cursos.alura.com.br/course/certificacao-java-excecoes)
 - ⚠️[Certificação Java SE 8 Programmer I: Conteúdo além da prova](https://cursos.alura.com.br/course/certificacao-java-lambdas-api-de-datas)
+
+## Refatoração em Java
+"Aprenda como a refatoração de código pode aumentar sua qualidade, sem alterar suas funcionalidades"
+- 🔨[Refatoração em Java: Boas práticas no seu código](https://cursos.alura.com.br/course/introducao-refatoracao-java)
 
 ## Desenvolvimento Pessoal
 "Desenvolva habilidades e hábitos chaves para o mercado"
