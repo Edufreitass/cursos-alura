@@ -19,22 +19,25 @@ public class Trilha {
 
 		LocalTime horarioCalculado = sessaoDaManha.comecaAs();
 		for(Palestra palestra : sessaoDaManha){
-			palestra.agendarPara(horarioCalculado);
-			atividadesAgendadas.add(palestra);
+			agendarPalestra(horarioCalculado, palestra);
 			horarioCalculado = horarioCalculado.plusMinutes(palestra.lerTempoDeDuracao().toInt());
 		}
 		agendarAlmoco();
 		
 		horarioCalculado = sessaoDaTarde.comecaAs();
 		for(Palestra palestra : sessaoDaTarde){
-			palestra.agendarPara(horarioCalculado);
-			atividadesAgendadas.add(palestra);
+			agendarPalestra(horarioCalculado, palestra);
 			int tempoDeDuracaoEmMinutos = palestra.lerTempoDeDuracao().toInt();
 			horarioCalculado = horarioCalculado.plusMinutes(tempoDeDuracaoEmMinutos);
 		}
 		agendarNetworking();
 	}
-	
+
+	private void agendarPalestra(LocalTime horarioCalculado, Palestra palestra) {
+		palestra.agendarPara(horarioCalculado);
+		atividadesAgendadas.add(palestra);
+	}
+
 	private void agendarNetworking() {
 		atividadesAgendadas.add(NETWORKING);
 	}
