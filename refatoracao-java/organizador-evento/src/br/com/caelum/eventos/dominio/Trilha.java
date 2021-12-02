@@ -27,8 +27,7 @@ public class Trilha {
 		horarioCalculado = sessaoDaTarde.comecaAs();
 		for(Palestra palestra : sessaoDaTarde){
 			agendarPalestra(horarioCalculado, palestra);
-			int tempoDeDuracaoEmMinutos = palestra.lerTempoDeDuracao().toInt();
-			horarioCalculado = horarioCalculado.plusMinutes(tempoDeDuracaoEmMinutos);
+			horarioCalculado = horarioCalculado.plusMinutes(palestra.lerTempoDeDuracao().toInt());
 		}
 		agendarNetworking();
 	}
