@@ -25,10 +25,10 @@ public class Agenda {
 		adicionarPalestrasSePossivel(umaSessaoDaTarde, listaDePalestras);
 		adicionarPalestrasSePossivel(outraSessaoDaTarde, listaDePalestras);
 		
-		String nomeDaTrilha = "PaPo ReTo";
-		Trilha trilha1 = new Trilha(nomeDaTrilha, umaSessaoDaManha, umaSessaoDaTarde);
-		nomeDaTrilha = "DiGiTal";
-		Trilha trilha2 = new Trilha(nomeDaTrilha, outraSessaoDaManha, outraSessaoDaTarde);
+		final String nomeDaTrilha1 = "PaPo ReTo";
+		Trilha trilha1 = new Trilha(nomeDaTrilha1, umaSessaoDaManha, umaSessaoDaTarde);
+		final String nomeDaTrilha2 = "DiGiTal";
+		Trilha trilha2 = new Trilha(nomeDaTrilha2, outraSessaoDaManha, outraSessaoDaTarde);
 		return asList(trilha1, trilha2);	
 	}
 	
