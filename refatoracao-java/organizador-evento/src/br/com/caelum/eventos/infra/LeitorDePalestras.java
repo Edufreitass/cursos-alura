@@ -33,10 +33,6 @@ public class LeitorDePalestras {
 
 	private Palestra lerPalestra(Scanner scanner) {
 		String linha = scanner.nextLine();
-		return lerPalestra(linha);
-	}
-	
-	private Palestra lerPalestra(String linha){
 		int indiceDaDivisaoEntreNomeETempo = linha.lastIndexOf(' ');
 		
 		String nome = linha.substring(0, indiceDaDivisaoEntreNomeETempo);
