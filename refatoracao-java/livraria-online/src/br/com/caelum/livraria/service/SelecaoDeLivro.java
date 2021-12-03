@@ -27,9 +27,9 @@ public class SelecaoDeLivro {
 		this.carrinhos = new HashSet<>();
 	}
 
-	public CarrinhoDeCompras adicionarLivroNoCarrinhoDoCliente(ISBN isbn, Cliente cliente, String cep) {
+	public CarrinhoDeCompras adicionarLivroNoCarrinhoDoCliente(ISBN isbn, Cliente cliente) {
 		Livro livro = todosLivros.por(isbn);
-		Money valorFrete = calculadoraFrete.baseadoEm(cep);
+		Money valorFrete = calculadoraFrete.baseadoEm(cliente.getCep());
 		
 		CarrinhoDeCompras carrinho = new CarrinhoDeCompras(cliente, livro, valorFrete, now());
 		if(carrinhos.contains(carrinho)) {
