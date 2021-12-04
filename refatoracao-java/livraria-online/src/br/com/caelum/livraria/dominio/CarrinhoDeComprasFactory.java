@@ -22,7 +22,7 @@ public class CarrinhoDeComprasFactory {
                     .filter(umCarrinho -> umCarrinho.doCliente(cliente))
                     .findFirst().orElse(null);
             if (carrinho != null) {
-                carrinho.getLivros().adicionar(livro);
+                carrinho.adicionar(livro);
             }
         } else {
             carrinhos.add(carrinho);
