@@ -8,5 +8,5 @@ public class ObjetosParaTestes {
 	public static final String ID_CLIENTE = "idCliente";
 	public static final Cliente UM_CLIENTE = new Cliente("idCliente", DDD, NUMERO_TELEFONE, CEP);
 	public static final Cliente OUTRO_CLIENTE = new Cliente("outroIdCliente", DDD, NUMERO_TELEFONE, CEP);
-	public static final String umAutor = "Rodrigo vieira";
+	public static final Autor umAutor = new Autor("Rodrigo vieira");
 }
