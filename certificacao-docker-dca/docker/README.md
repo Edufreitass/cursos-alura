@@ -136,4 +136,26 @@ No caso das nossas aplicações, essa abordagem pode ter alguns problemas. Por e
 
 Com os containers, conseguimos limitar o consumo de CPU das aplicações, melhorando o controle sobre o uso de cada recurso do nosso sistema (CPU, rede, etc). Também temos uma facilidade maior em trabalhar com versões específicas de linguagens/bibliotecas, além de ter uma agilidade maior na hora de criar e subir containers, já que eles são mais leves que as máquinas virtuais.
 
+# Layered File System
+
+## Camadas de uma imagem
+
+Quando baixamos a imagem do Ubuntu, reparamos que ela possui camadas, mas como elas funcionam? Toda imagem que baixamos é composta de uma ou mais camadas, e esse sistema tem o nome de Layered File System.
+
+Essas camadas podem ser reaproveitadas em outras imagens. Por exemplo, já temos a imagem do Ubuntu, isso inclui as suas camadas, e agora queremos baixar a imagem do CentOS. Se o CentOS compartilha alguma camada que já tem na imagem do Ubuntu, o Docker é inteligente e só baixará as camadas diferentes, e não baixará novamente as camadas que já temos no nosso computador:
+
+![image](https://user-images.githubusercontent.com/56324728/144732907-ab5e2696-ed35-4f54-929a-ccbfa4691f86.png)
+
+No caso da imagem acima, o Docker só baixará as duas primeiras camadas da imagem do CentOS, já que as duas últimas são as mesmas da imagem do Ubuntu, que já temos na nossa máquina. Assim poupamos tempo, já que precisamos de menos tempo para baixar uma imagem.
+
+Uma outra vantagem é que as camadas de uma imagem são somente para leitura. Mas como então conseguimos criar arquivos na aula anterior? O que acontece é que não escrevemos na imagem, já que quando criamos um container, ele cria uma nova camada acima da imagem, e nessa camada podemos ler e escrever:
+
+![image](https://user-images.githubusercontent.com/56324728/144732915-db304136-9003-42fb-b70d-60fd2e8b7199.png)
+
+Então, quando criamos um container, ele é criado em cima de uma imagem já existente e nele nós conseguimos escrever. E com uma imagem base, podemos reaproveitá-la para diversos containers:
+
+![image](https://user-images.githubusercontent.com/56324728/144732918-fa10eb1a-53e3-49ea-b19a-3049a2125d5b.png)
+
+Isso nos traz economia de espaço, já que não precisamos ter uma imagem por container.
+
 ### Observação: todo esse conteúdo foi retirado do curso da Alura.
