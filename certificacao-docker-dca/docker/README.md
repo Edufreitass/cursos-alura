@@ -42,3 +42,69 @@ Quando a empresa dotCloud tornou-se a Docker, Inc., focada em manter o Docker, e
 tudo disponibilizado no seu GitHub, inclusive com várias empresas contribuindo para o desenvolvimento dessa tecnologia.
 
 Apesar de haver alguns serviços pagos, em sua grande parte a tecnologia do Docker é uma tecnologia open source, utilizada por várias empresas.
+
+# O problema das máquinas virtuais
+
+## A evolução do host de aplicações
+
+Antigamente, quando queríamos montar o nosso sistema, com vários serviços (bancos de dados, proxy, etc) e aplicações, 
+acabávamos tendo vários servidores físicos, cada um com um serviço ou aplicação do nosso sistema, por exemplo:
+
+![image](https://user-images.githubusercontent.com/56324728/144731971-30f6b05e-8b74-4ae9-bed8-049dd60c4778.png)
+
+E claro, não conseguimos instalar os serviços diretamente no hardware do servidor, ou seja, precisamos de um intermediário 
+entre as aplicações e o hardware, que é o sistema operacional. Ou seja, devemos instalar sistemas operacionais em cada servidor, 
+e os sistemas poderiam ser diferentes:
+
+![image](https://user-images.githubusercontent.com/56324728/144731986-f6802a37-2944-4b2d-9eee-6cf46404271d.png)
+
+E se quisermos que uma aplicação se comunique com outra ou faça qualquer comunicação externa, devemos conectar os servidores à rede. 
+Além disso, para eles funcionarem, precisamos ligá-los à eletricidade. Logo, havia diversos custos de eletricidade, rede e configuração dos servidores.
+
+Além disso, o processo era lento, já que a cada nova aplicação, deveríamos comprar/montar o servidor físico, instalar o sistema operacional, 
+configurá-lo e subir a aplicação.
+
+## Capacidade pouco aproveitada
+
+O que foi falado anteriormente não era o único problema desse tipo de arquitetura. Era muito comum termos servidores parrudos, 
+com uma única aplicação sendo executada, para normalmente ficarem funcionando abaixo da sua capacidade, para quando for necessário, 
+o servidor aguentar uma grande quantidade de acessos. Isso resultava em muita capacidade ociosa nos servidores, com muitos recursos desperdiçados.
+
+## Virtualização, uma solução?
+
+Para fugir desses problemas de servidores ociosos e alto tempo e custo de subir e manter aplicações em servidores físicos, 
+surgiu como solução a virtualização, surgindo assim as máquinas virtuais.
+
+As máquinas virtuais foram possíveis de ser criadas graças a uma tecnologia chamada Hypervisor, que funciona em cima do sistema operacional, 
+permitindo a virtualização dos recursos físicos do nosso sistema. Assim, criamos uma máquina virtual que tem acesso a uma parte do nosso HD, 
+memória RAM e CPU, criando um computador dentro de outro:
+
+![image](https://user-images.githubusercontent.com/56324728/144732017-f6eb1120-af8b-4d49-bd66-be03d4ae7ef2.png)
+
+E se temos uma máquina virtual que está acessando uma parte do nosso hardware como um todo, conseguimos colocar dentro dela uma das nossas aplicações. 
+E replicar isso, criando mais máquinas virtuais com outras aplicações:
+
+![image](https://user-images.githubusercontent.com/56324728/144732033-6693abba-f7de-400d-a3fb-d480253d976b.png)
+
+Assim, reduzimos a quantidade de servidores e consequentemente os custos com luz e rede. Além disso, 
+dividimos melhor o nosso hardware, aproveitando melhor os seus recursos e diminuindo a ociosidade.
+
+## Problemas das máquinas virtuais
+
+Apesar de resolver os problemas do uso de vários servidores físicos, as máquinas virtuais também possuem problemas. 
+Para podermos hospedar a nossa aplicação em uma máquina virtual, também precisamos instalar um sistema operacional nela:
+
+![image](https://user-images.githubusercontent.com/56324728/144732056-382f9513-da8a-4abc-bc91-8d0ac5b0e1db.png)
+
+Cada aplicação necessita de um sistema operacional para poder ser executada, e esses sistemas podem ser diferentes. 
+E apesar dos sistemas operacionais serem um software, eles possuem um custo de memória RAM, disco e processamento. 
+Ou seja, precisamos de uma capacidade mínima para manter as funcionalidades de um sistema operacional, 
+aumentando o seu custo de manutenção a cada sistema que tivermos.
+
+Além disso, há um custo de configuração, isto é, liberar portas, instalar alguma biblioteca específica, etc, 
+toda uma configuração que um sistema operacional pede. Também devemos sempre estar atentos à sua segurança, 
+mantendo o sistema de cada máquina virtual sempre atualizado.
+
+Muitas vezes, o tempo voltado para a manutenção das máquinas virtuais era o mesmo tempo voltado para a nossa aplicação em si. 
+Ou seja, acabávamos dividindo o valor da nossa empresa, ao invés de focar somente nas aplicações, 
+dividíamos o trabalho com a manutenção dos sistemas operacionais.
