@@ -23,3 +23,13 @@
 `docker run -d -p 12345:80 dockersamples/static-site` - define uma porta específica para ser atribuída à porta 80 do container, neste caso 12345.
 
 `docker run -d -P -e AUTHOR="Fulano" dockersamples/static-site` - define uma variável de ambiente AUTHOR com o valor Fulano no container criado.
+
+`docker build -f Dockerfile` - cria uma imagem a partir de um Dockerfile.
+
+`docker build -f CAMINHO_DOCKERFILE/Dockerfile -t NOME_USUARIO/NOME_IMAGEM` - constrói e nomeia uma imagem não-oficial informando o caminho para o Dockerfile.
+
+`docker login` - inicia o processo de login no Docker Hub.
+
+`docker push NOME_USUARIO/NOME_IMAGEM` - envia a imagem criada para o Docker Hub.
+
+`docker pull NOME_USUARIO/NOME_IMAGEM` - baixa a imagem desejada do Docker Hub.
