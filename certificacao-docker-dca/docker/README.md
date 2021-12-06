@@ -156,6 +156,6 @@ Então, quando criamos um container, ele é criado em cima de uma imagem já exi
 
 ![image](https://user-images.githubusercontent.com/56324728/144732918-fa10eb1a-53e3-49ea-b19a-3049a2125d5b.png)
 
-Isso nos traz economia de espaço, já que não precisamos ter uma imagem por container.
+Isso nos traz economia de espaço, já que não precisamos ter uma imagem por container. Imagens são Read-Only sempre (apenas para leitura) e containers representam uma instância de uma imagem. Como imagens são Read-Only os containers criam nova camada (layer) para guardar as alterações
 
 ### Observação: todo esse conteúdo foi retirado do curso da Alura.
