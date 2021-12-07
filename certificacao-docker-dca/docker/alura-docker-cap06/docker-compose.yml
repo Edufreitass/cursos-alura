@@ -6,7 +6,7 @@ services:
       context: .
     image: edufreitass/nginx
     container_name: nginx
-    port:
+    ports:
       - "80:80"
     networks:
       - production-network
