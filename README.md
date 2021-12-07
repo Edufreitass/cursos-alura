@@ -101,7 +101,14 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 
 ## Refatoração em Java
 "Aprenda como a refatoração de código pode aumentar sua qualidade, sem alterar suas funcionalidades"
-- 🔨[Refatoração em Java: Boas práticas no seu código](https://cursos.alura.com.br/course/introducao-refatoracao-java)
+- ✅[Refatoração em Java: Boas práticas no seu código](https://cursos.alura.com.br/course/introducao-refatoracao-java)
+
+## Certificação Docker DCA
+"Domine a principal e mais popular ferramenta de containers utilizada por times de tecnologia ao redor do mundo, prepare-se para a certificação Docker DCA e alavanque sua carreira!"
+- 🔨[Docker: Criando containers sem dor de cabeça](https://cursos.alura.com.br/course/docker-e-docker-compose)
+- ⚠️[Docker Swarm: Orquestrador de containers](https://cursos.alura.com.br/course/docker-swarm-cluster-container)
+- ⚠️[Docker DCA: Inicie os estudos para a prova de certificação do Docker](https://cursos.alura.com.br/course/docker-dca-introducao)
+- ⚠️[Docker DCA: Finalize os estudos para a prova de certificação do Docker](https://cursos.alura.com.br/course/docker-dca-finalizacao)
 
 ## Desenvolvimento Pessoal
 "Desenvolva habilidades e hábitos chaves para o mercado"
