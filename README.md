@@ -1,9 +1,5 @@
 # Cursos [Alura](https://www.alura.com.br/)
 
-## (Em desenvolvimento) 🔨📚📝
-
-Este repositório irá conter projetos desenvolvidos seguindo um plano de estudos de **Java Back-End Developer** na Alura.
-
 - Legendas:
   - ✅ : Feito
   - ⚠️ : Pendente
@@ -42,39 +38,13 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 
 ## Spring Framework
 "Crie modernas aplicações web Java com o Spring Framework. Aprenda a programar do acesso ao banco de dados, com Spring Data, até a aplicação web, com Spring MVC, e publicação da API REST, tudo com o framework mais popular do mundo Java."
-- ⚠️[Java Servlet: Fundamentos da programação web Java](https://cursos.alura.com.br/course/servlets-fundamentos-programacao-web-java)
-- ⚠️[Java Servlet: Autenticação, autorização e o padrão MVC](https://cursos.alura.com.br/course/servlet-autenticacao-autorizacao-mvc)
-- ⚠️[Java e JDBC: Trabalhando com um banco de dados](https://cursos.alura.com.br/course/jdbc-dao-persistencia)
+- 🔨[Java e JDBC: Trabalhando com um banco de dados](https://cursos.alura.com.br/course/jdbc-dao-persistencia)
 - ⚠️[Persistência com JPA: Introdução ao Hibernate](https://cursos.alura.com.br/course/persistencia-jpa-introducao-hibernate)
 - ⚠️[Java e JPA: Consultas avançadas, performance e modelos complexos](https://cursos.alura.com.br/course/java-jpa-consultas-avancadas-performance-modelos-complexos)
 - ⚠️[Spring Data JPA: Repositórios, Consultas, Projeções e Specifications](https://cursos.alura.com.br/course/spring-data-jpa)
-- ⚠️[Spring MVC: Crie um web app com Thymeleaf e Bootstrap](https://cursos.alura.com.br/course/spring-mvc-thymeleaf-bootstrap)
-- ⚠️[Spring MVC: Autenticação com Spring Security, API Rest e AJAX](https://cursos.alura.com.br/course/spring-mvc-security-rest-vuejs-ajax)
 - ✅[Spring Boot API REST: Construa uma API](https://cursos.alura.com.br/course/spring-boot-api-rest)
 - ✅[Spring Boot API Rest: Segurança da API, Cache e Monitoramento](https://cursos.alura.com.br/course/spring-boot-seguranca-cache-monitoramento)
 - ✅[Spring Boot e Teste: Profiles, Testes e Deploy](https://cursos.alura.com.br/course/spring-boot-profiles-testes-deploy)
-
-## Java EE
-"Você vai estudar e praticar com a JPA2 e Hibernate dentro da Java EE, fará uma aplicação web com JSF2 e CDI"
-- ⚠️[Java e JPA: Persista seus objetos com a JPA2 e Hibernate](https://cursos.alura.com.br/course/jpa-hibernate-persistencia-objetos)
-- ⚠️[Java e JPA: Pesquise com JPQL e Criteria](https://cursos.alura.com.br/course/java-jpa-jpql-criteria)
-- ⚠️[EJB: O poder da Java EE](https://cursos.alura.com.br/course/ejb)
-- ⚠️[EJB com Jakarta EE: API Rest com o servidor WildFly](https://cursos.alura.com.br/course/ejb-jakarta-ee-api-rest-wildfly)
-- ⚠️[Java e JSF I: Sua aplicação web com JSF2](https://cursos.alura.com.br/course/jsf)
-- ⚠️[Java e JSF 2 - II: Componentes ricos com Primefaces](https://cursos.alura.com.br/course/jsf-primefaces)
-- ⚠️[Java e JSF 2 - III: Integração com CDI](https://cursos.alura.com.br/course/jsf-cdi)
-- ⚠️[Maven: Build do zero a web](https://cursos.alura.com.br/course/maven-build-do-zero-a-web)
-- ⚠️[Java EE parte 1: Crie sua loja online com CDI, JSF, JPA](https://cursos.alura.com.br/course/java-ee-webapp)
-- ⚠️[Java EE parte 2: Sua loja online com HTML, REST e Cache](https://cursos.alura.com.br/course/java-ee-webapp-2)
-- ⚠️[Java EE parte 3: Finalizando sua loja com REST, JMS, JAAS e WebSockets](https://cursos.alura.com.br/course/java-ee-webapp-3)
-
-## Integração de Aplicações Java
-"Domine a criação de webservices REST e SOAP, integre sistemas com JMS, conheça o Apache Camel e aprenda como testar e consumir testes em um webservice."
-- ⚠️[JAX-RS e Jersey : Domine a criação de webservices REST](https://cursos.alura.com.br/course/webservices-rest-com-jaxrs-e-jersey)
-- ⚠️[JAX-WS : Domine a criação de webservices SOAP](https://cursos.alura.com.br/course/web-services-soap)
-- ⚠️[JMS e ActiveMQ: Mensageria com Java](https://cursos.alura.com.br/course/jms)
-- ⚠️[Apache Camel: O framework de integração entre sistemas](https://cursos.alura.com.br/course/camel)
-- ⚠️[Rest Assured: Testes automatizado de webservice](https://cursos.alura.com.br/course/rest-assured)
 
 ## Arquitetura e Design de Projetos Java
 "Modelo o seu projeto usando boas práticas e padrões de projeto como o SOLID. Use BDD e DDD e saiba as vantagens da Clean Architecture."
@@ -106,29 +76,9 @@ Este repositório irá conter projetos desenvolvidos seguindo um plano de estudo
 ## Certificação Docker DCA
 "Domine a principal e mais popular ferramenta de containers utilizada por times de tecnologia ao redor do mundo, prepare-se para a certificação Docker DCA e alavanque sua carreira!"
 - ✅[Docker: Criando containers sem dor de cabeça](https://cursos.alura.com.br/course/docker-e-docker-compose)
-- 🔨[Docker Swarm: Orquestrador de containers](https://cursos.alura.com.br/course/docker-swarm-cluster-container)
-- ⚠️[Docker DCA: Inicie os estudos para a prova de certificação do Docker](https://cursos.alura.com.br/course/docker-dca-introducao)
-- ⚠️[Docker DCA: Finalize os estudos para a prova de certificação do Docker](https://cursos.alura.com.br/course/docker-dca-finalizacao)
 
 ## Desenvolvimento Pessoal
 "Desenvolva habilidades e hábitos chaves para o mercado"
-- ⚠️[Hábitos: da produtividade às metas pessoais](https://cursos.alura.com.br/course/habitos)
-- ⚠️[Eficácia parte 1: Hábitos para sua proatividade](https://cursos.alura.com.br/course/habitos-eficazes)
-- ⚠️[Eficácia parte 2: Hábitos para sua proatividade](https://cursos.alura.com.br/course/habitos-eficazes-2)
-- ⚠️[Foco: Trazendo mais resultados para o dia a dia](https://cursos.alura.com.br/course/foco-o-poder-do-habito-seu-dia-a-dia)
-- ⚠️[Pontos fortes parte 1: descubra os seus e aprenda a gerenciá-los](https://cursos.alura.com.br/course/pontos-fortes)
-- ⚠️[Pontos fortes parte 2: Habilidades e competências](https://cursos.alura.com.br/course/pontos-fortes-habilidades-competencias)
-- ⚠️[Estresse parte 1: buscando qualidade de vida](https://cursos.alura.com.br/course/estresse-trabalho)
-- ⚠️[Estresse parte 2: Equilibre seu estilo de vida](https://cursos.alura.com.br/course/estresse-trabalho-equilibrio-no-estilo-de-vida)
-- ⚠️[Comunicação: Como se expressar bem e ser compreendido](https://cursos.alura.com.br/course/comunicacao)
-- ⚠️[Relacionamento interpessoal: aprenda a lidar melhor com você e com o outro](https://cursos.alura.com.br/course/relacionamento-pessoal)
-- ⚠️[Feedback: a arte de orientar e ser orientado com sentido](https://cursos.alura.com.br/course/feedback)
-- ⚠️[Oratória parte 1: Compartilhe ideias e histórias](https://cursos.alura.com.br/course/oratoria-compartilhe-ideias)
-- ⚠️[Oratória parte 2: Apresentações em público](https://cursos.alura.com.br/course/oratoria-apresentacoes-em-publico)
 - ✅[Aprender a Aprender: Técnicas para seu autodesenvolvimento](https://cursos.alura.com.br/course/aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento)
-- ⚠️[Produtividade: hábitos e práticas para o dia a dia](https://cursos.alura.com.br/course/produtividade)
-- ⚠️[Produtividade parte 1: estratégias para o dia a dia](https://cursos.alura.com.br/course/produtividade-administre-tempo)
-- ⚠️[Produtividade Parte 2: Organização e prioridade](https://cursos.alura.com.br/course/produtividade-organizacao-e-prioridade)
-- ⚠️[Foco: Trazendo mais resultados para o dia a dia](https://cursos.alura.com.br/course/foco-o-poder-do-habito-seu-dia-a-dia)
 
 #### Never Stop Learning 🚀🚀🚀
