@@ -1,15 +1,15 @@
 package br.com.alura;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class TestaListagem {
 
     public static void main(String[] args) throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/loja_virtual?useTimezone=true&serverTimeZone=UTC";
-        String user = "root";
-        String password = "root";
-
-        Connection connection = DriverManager.getConnection(url, user, password);
+        ConnectionFactory connectionFactory = new ConnectionFactory();
+        Connection connection = connectionFactory.recuperarConexao();
 
         Statement statement = connection.createStatement();
         statement.execute("""
