@@ -1,9 +1,9 @@
 package br.com.alura;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class TestaListagem {
 
@@ -11,14 +11,13 @@ public class TestaListagem {
         ConnectionFactory connectionFactory = new ConnectionFactory();
         Connection connection = connectionFactory.recuperarConexao();
 
-        Statement statement = connection.createStatement();
-        statement.execute("""
-                SELECT ID, NOME, DESCRICAO FROM PRODUTO
-                """);
+        String sql = "SELECT ID, NOME, DESCRICAO FROM PRODUTO";
 
-        ResultSet resultSet = statement.getResultSet();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.execute();
 
-        while(resultSet.next()) {
+        ResultSet resultSet = preparedStatement.getResultSet();
+        while (resultSet.next()) {
             Integer id = resultSet.getInt("ID"); // posicao 1
             System.out.println(id);
 
