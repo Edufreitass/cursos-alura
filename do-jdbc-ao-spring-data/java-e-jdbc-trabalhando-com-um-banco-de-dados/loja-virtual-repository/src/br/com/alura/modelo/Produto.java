@@ -3,8 +3,8 @@ package br.com.alura.modelo;
 public class Produto {
 
     private Integer id;
-    private String nome;
-    private String descricao;
+    private final String nome;
+    private final String descricao;
 
     public Produto(Integer id, String nome, String descricao) {
         this.id = id;
