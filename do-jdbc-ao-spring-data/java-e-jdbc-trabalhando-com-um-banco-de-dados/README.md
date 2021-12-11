@@ -47,3 +47,11 @@ $ INSERT INTO PRODUTO (nome, descricao) VALUES ('NOTEBOOK', 'NOTEBOOK SAMSUNG');
 commit e rollback são operações clássicas de transações
 - Para garantir o fechamento dos recursos, existe no Java uma cláusula try-with-resources
   - O recurso em questão deve usar a interface Autoclosable
+
+### Escalabilidade com pool de conexões
+
+- É boa prática usar um pool de conexões
+- Um pool de conexões administra/controla a quantidade de conexões abertas
+  - Normalmente tem um mínimo e máximo de conexões
+- Como existe uma interface que representa a conexão (java.sql.Connection), também existe uma interface que representa o pool de conexões (javax.sql.DataSource)
+- C3PO é uma implementação Java de um pool de conexão
