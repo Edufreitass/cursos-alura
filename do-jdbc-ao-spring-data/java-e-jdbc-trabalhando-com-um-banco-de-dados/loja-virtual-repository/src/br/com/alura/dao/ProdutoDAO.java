@@ -6,13 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProdutoDAO {
-
-    private final Connection connection;
-
-    public ProdutoDAO(Connection connection) {
-        this.connection = connection;
-    }
+public record ProdutoDAO(Connection connection) {
 
     public void salvar(Produto produto) throws SQLException {
         String sql = "INSERT INTO PRODUTO(nome, descricao) VALUES(?, ?)";
