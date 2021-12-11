@@ -1,5 +1,7 @@
 package br.com.alura;
 
+import br.com.alura.factory.ConnectionFactory;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,7 +19,7 @@ public class TestaInsercao {
                 """, Statement.RETURN_GENERATED_KEYS);
 
         ResultSet resultSet = statement.getGeneratedKeys();
-        while(resultSet.next()) {
+        while (resultSet.next()) {
             Integer id = resultSet.getInt(1);
             System.out.println("O id criado foi: " + id);
         }
