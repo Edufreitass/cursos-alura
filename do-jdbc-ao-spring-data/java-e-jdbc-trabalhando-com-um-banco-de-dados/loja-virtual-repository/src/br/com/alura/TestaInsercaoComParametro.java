@@ -11,22 +11,33 @@ public class TestaInsercaoComParametro {
 
         String sql = "INSERT INTO PRODUTO(nome, descricao) VALUES(?, ?)";
 
-        PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-        adicionarVariavel("SmartTV", "45 polegadas", preparedStatement);
-        adicionarVariavel("Radio", "Radio de bateria", preparedStatement);
+        try {
+            PreparedStatement stm = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            adicionarVariavel("SmartTV", "45 polegadas", stm);
+            adicionarVariavel("Radio", "Radio de bateria", stm);
+
+            connection.commit();
+
+            stm.close();
+            connection.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("ROLLBACK EXECUTADO");
+            connection.rollback();
+        }
     }
 
-    private static void adicionarVariavel(String nome, String descricao, PreparedStatement preparedStatement) throws SQLException {
-        preparedStatement.setString(1, nome);
-        preparedStatement.setString(2, descricao);
+    private static void adicionarVariavel(String nome, String descricao, PreparedStatement stm) throws SQLException {
+        stm.setString(1, nome);
+        stm.setString(2, descricao);
 
-//        if (nome.equals("Radio")) {
-//            throw new RuntimeException("Não foi possível adicionar o produto");
-//        }
+        if (nome.equals("Radio")) {
+            throw new RuntimeException("Não foi possível adicionar o produto");
+        }
 
-        preparedStatement.execute();
+        stm.execute();
 
-        ResultSet resultSet = preparedStatement.getGeneratedKeys();
+        ResultSet resultSet = stm.getGeneratedKeys();
         while (resultSet.next()) {
             int id = resultSet.getInt(1);
             System.out.println("O id criado foi: " + id);
