@@ -6,24 +6,21 @@ public class TestaInsercaoComParametro {
 
     public static void main(String[] args) throws SQLException {
         ConnectionFactory connectionFactory = new ConnectionFactory();
-        Connection connection = connectionFactory.recuperarConexao();
-        connection.setAutoCommit(false);
+        try (Connection connection = connectionFactory.recuperarConexao()) {
+            connection.setAutoCommit(false);
 
-        String sql = "INSERT INTO PRODUTO(nome, descricao) VALUES(?, ?)";
+            String sql = "INSERT INTO PRODUTO(nome, descricao) VALUES(?, ?)";
 
-        try {
-            PreparedStatement stm = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            adicionarVariavel("SmartTV", "45 polegadas", stm);
-            adicionarVariavel("Radio", "Radio de bateria", stm);
+            try (PreparedStatement stm = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+                adicionarVariavel("SmartTV", "45 polegadas", stm);
+                adicionarVariavel("Radio", "Radio de bateria", stm);
 
-            connection.commit();
-
-            stm.close();
-            connection.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("ROLLBACK EXECUTADO");
-            connection.rollback();
+                connection.commit();
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("ROLLBACK EXECUTADO");
+                connection.rollback();
+            }
         }
     }
 
@@ -37,10 +34,11 @@ public class TestaInsercaoComParametro {
 
         stm.execute();
 
-        ResultSet resultSet = stm.getGeneratedKeys();
-        while (resultSet.next()) {
-            int id = resultSet.getInt(1);
-            System.out.println("O id criado foi: " + id);
+        try (ResultSet resultSet = stm.getGeneratedKeys()) {
+            while (resultSet.next()) {
+                int id = resultSet.getInt(1);
+                System.out.println("O id criado foi: " + id);
+            }
         }
     }
 }
