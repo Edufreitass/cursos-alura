@@ -31,3 +31,10 @@ $ INSERT INTO PRODUTO (nome, descricao) VALUES ('NOTEBOOK', 'NOTEBOOK SAMSUNG');
 - Para executar um comando SQL, podemos usar a interface java.sql.Statement
   - O método execute envia o comando para o banco de dados
   - Dependendo do comando SQL, podemos recuperar a chave primária ou os registros selecionados
+
+### Evitando SQL Injection
+
+- Ao executar SQL como Statement, temos um risco de segurança, chamado de SQL Injection
+-   SQL Injection nada mais é do que passar um novo comando SQL como parâmetro
+- Para evitar SQL Injection, devemos usar a interface PreparedStatement
+-   Diferentemente do Statement, o PreparedStatement trata (sanitiza) cada parâmetro do comando SQL
