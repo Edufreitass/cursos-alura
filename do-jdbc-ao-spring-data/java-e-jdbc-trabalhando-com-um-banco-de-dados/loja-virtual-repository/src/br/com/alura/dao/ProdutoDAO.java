@@ -1,5 +1,6 @@
 package br.com.alura.dao;
 
+import br.com.alura.modelo.Categoria;
 import br.com.alura.modelo.Produto;
 
 import java.sql.*;
@@ -31,6 +32,27 @@ public record ProdutoDAO(Connection connection) {
         String sql = "SELECT ID, NOME, DESCRICAO FROM PRODUTO";
 
         try (PreparedStatement pstm = connection.prepareStatement(sql)) {
+            pstm.execute();
+
+            try (ResultSet rs = pstm.getResultSet()) {
+                while (rs.next()) {
+                    Produto produto = new Produto(rs.getInt(1), rs.getString(2), rs.getString(3));
+                    produtos.add(produto);
+                }
+            }
+        }
+        return produtos;
+    }
+
+    public List<Produto> buscar(Categoria categoria) throws SQLException {
+        List<Produto> produtos = new ArrayList<>();
+
+        System.out.println("Executando a query de buscar produto por categoria");
+
+        String sql = "SELECT ID, NOME, DESCRICAO FROM PRODUTO WHERE CATEGORIA_ID = ?";
+
+        try (PreparedStatement pstm = connection.prepareStatement(sql)) {
+            pstm.setInt(1, categoria.getId());
             pstm.execute();
 
             try (ResultSet rs = pstm.getResultSet()) {
