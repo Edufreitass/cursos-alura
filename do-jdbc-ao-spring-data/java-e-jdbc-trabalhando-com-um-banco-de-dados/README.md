@@ -82,3 +82,13 @@ commit e rollback são operações clássicas de transações
   - Queries N + 1 podem gerar um problema no desempenho
   - Queries N + 1 podem ser evitadas através de joins no SQL
 - A criar a nossa própria camada de persistência
+
+### Aplicação Desktop
+
+- uma aplicação é escrita em camadas
+  - camadas clássicas são view, controller, modelo e persistência
+- o fluxo entre as camadas segue a ordem:
+view <--> controller <--> persistencia
+- nesse curso focamos na camada de persistência
+- uma camada não deve deixar "vazar" detalhes da implementação (por exemplo uma exceção como SQLException)
+em outras formações você aprenderá como criar a view ou front-end para Android (mobile) ou web (html)
