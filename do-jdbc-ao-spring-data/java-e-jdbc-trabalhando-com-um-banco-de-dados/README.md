@@ -74,3 +74,11 @@ commit e rollback são operações clássicas de transações
 - Para acessar a tabela, usaremos um padrão chamado Data Access Object (DAO)
   - Para cada classe de domínio, existe um DAO. Por exemplo, a classe Produto possui um ProdutoDao
   - Todos os métodos JDBC relacionados com o produto devem estar encapsulados no ProdutoDao
+
+### Evitando queries N + 1
+
+- Que quando temos um relacionamento, é preciso ter cuidado para não cair no problema de queries N + 1
+  - N + 1 significa executar uma query e mais uma nova query (N) para cada relacionamento
+  - Queries N + 1 podem gerar um problema no desempenho
+  - Queries N + 1 podem ser evitadas através de joins no SQL
+- A criar a nossa própria camada de persistência
