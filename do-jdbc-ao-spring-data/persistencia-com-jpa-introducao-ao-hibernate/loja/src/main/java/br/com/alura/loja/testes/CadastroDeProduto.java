@@ -1,29 +1,43 @@
 package br.com.alura.loja.testes;
 
+import br.com.alura.loja.dao.CategoriaDAO;
+import br.com.alura.loja.dao.ProdutoDAO;
 import br.com.alura.loja.modelo.Categoria;
+import br.com.alura.loja.modelo.Produto;
 import br.com.alura.loja.util.JPAUtil;
 
 import javax.persistence.EntityManager;
+import java.math.BigDecimal;
+import java.util.List;
 
 public class CadastroDeProduto {
 
     public static void main(String[] args) {
+        cadastrarProduto();
+        EntityManager em = JPAUtil.getEntityManager();
+        ProdutoDAO produtoDAO = new ProdutoDAO(em);
+
+        Produto p = produtoDAO.buscarPorId(1l);
+        System.out.println(p.getPreco());
+
+        List<Produto> produtos = produtoDAO.buscarTodos();
+        produtos.forEach(produto -> System.out.println(produto.getNome()));
+    }
+
+    private static void cadastrarProduto() {
         Categoria celulares = new Categoria("CELULARES");
+        Produto celular = new Produto("Xiaomi Redmi", "Muito legal", new BigDecimal("800"), celulares);
 
         EntityManager em = JPAUtil.getEntityManager();
+        ProdutoDAO produtoDAO = new ProdutoDAO(em);
+        CategoriaDAO categoriaDAO = new CategoriaDAO(em);
+
         em.getTransaction().begin();
 
-        em.persist(celulares);
-        celulares.setNome("XPTO");
+        categoriaDAO.cadastrar(celulares);
+        produtoDAO.cadastrar(celular);
 
-        em.flush();
-        em.clear();
-
-        celulares = em.merge(celulares);
-        celulares.setNome("1234");
-        em.flush();
-        em.clear();
-        em.remove(celulares);
-        em.flush();
+        em.getTransaction().commit();
+        em.close();
     }
 }
