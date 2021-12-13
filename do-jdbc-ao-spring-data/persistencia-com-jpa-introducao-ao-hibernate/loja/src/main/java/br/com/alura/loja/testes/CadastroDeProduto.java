@@ -1,30 +1,26 @@
 package br.com.alura.loja.testes;
 
-import br.com.alura.loja.dao.CategoriaDAO;
-import br.com.alura.loja.dao.ProdutoDAO;
 import br.com.alura.loja.modelo.Categoria;
-import br.com.alura.loja.modelo.Produto;
 import br.com.alura.loja.util.JPAUtil;
 
 import javax.persistence.EntityManager;
-import java.math.BigDecimal;
 
 public class CadastroDeProduto {
 
     public static void main(String[] args) {
         Categoria celulares = new Categoria("CELULARES");
-        Produto celular = new Produto("Xiaomi Redmi", "Muito legal", new BigDecimal("800"), celulares);
 
         EntityManager em = JPAUtil.getEntityManager();
-        CategoriaDAO categoriaDAO = new CategoriaDAO(em);
-        ProdutoDAO produtoDAO = new ProdutoDAO(em);
-
         em.getTransaction().begin();
 
-        categoriaDAO.cadastrar(celulares);
-        produtoDAO.cadastrar(celular);
+        em.persist(celulares);
+        celulares.setNome("XPTO");
 
-        em.getTransaction().commit();
-        em.close();
+        em.flush();
+        em.clear();
+
+        celulares = em.merge(celulares);
+        celulares.setNome("1234");
+        em.flush();
     }
 }
