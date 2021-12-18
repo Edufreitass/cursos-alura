@@ -21,7 +21,7 @@ public class RelatorioFuncionarioDinamico {
         this.funcionarioRepository = funcionarioRepository;
     }
 
-    public void initial(Scanner scanner) {
+    public void inicial(Scanner scanner) {
         System.out.println("Digite o nome");
         String nome = scanner.next();
 
