@@ -1,6 +1,7 @@
 package br.com.alura.spring.data.service;
 
 import br.com.alura.spring.data.orm.Funcionario;
+import br.com.alura.spring.data.orm.FuncionarioDTO;
 import br.com.alura.spring.data.orm.FuncionarioProjecao;
 import br.com.alura.spring.data.repository.FuncionarioRepository;
 import org.springframework.stereotype.Service;
@@ -29,6 +30,7 @@ public class RelatoriosService {
             System.out.println("2 - Busca funcionario por nome, data de contratacao e salario maior");
             System.out.println("3 - Busca funcionario data contratacao");
             System.out.println("4 - Busca funcionario salario");
+            System.out.println("5 - Busca funcionario por nome e cpf");
 
             int action = scanner.nextInt();
 
@@ -37,6 +39,7 @@ public class RelatoriosService {
                 case 2 -> buscaFuncionarioPorNomeSalarioMaiorDataContratacao(scanner);
                 case 3 -> buscaFuncionarioPorDataContratacao(scanner);
                 case 4 -> buscaFuncionarioSalario();
+                case 5 -> buscaFuncionarioNomeCpf();
                 default -> system = false;
             }
         }
@@ -77,5 +80,10 @@ public class RelatoriosService {
         List<FuncionarioProjecao> funcionarioProjecaos = funcionarioRepository.findFuncionarioSalario();
         funcionarioProjecaos.forEach(f -> System.out.println("Funcionario: id: " + f.getId()
                 + " | nome: " + f.getNome() + " | salario: " + f.getSalario()));
+    }
+
+    private void buscaFuncionarioNomeCpf() {
+        List<FuncionarioDTO> dto = funcionarioRepository.findFuncionarioNomeCpf();
+        dto.forEach(f -> System.out.println("Funcionario: nome: " + f.getNome() + " | cpf: " + f.getCpf()));
     }
 }

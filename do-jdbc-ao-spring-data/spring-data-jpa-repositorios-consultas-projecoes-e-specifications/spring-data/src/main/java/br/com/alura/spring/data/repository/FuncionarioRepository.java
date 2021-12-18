@@ -1,6 +1,7 @@
 package br.com.alura.spring.data.repository;
 
 import br.com.alura.spring.data.orm.Funcionario;
+import br.com.alura.spring.data.orm.FuncionarioDTO;
 import br.com.alura.spring.data.orm.FuncionarioProjecao;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -24,4 +25,7 @@ public interface FuncionarioRepository extends PagingAndSortingRepository<Funcio
 
     @Query(value = "SELECT f.id, f.nome, f.salario FROM funcionarios f", nativeQuery = true)
     List<FuncionarioProjecao> findFuncionarioSalario();
+
+    @Query(value = "SELECT new br.com.alura.spring.data.orm.FuncionarioDTO(f.nome, f.cpf) FROM Funcionario f")
+    List<FuncionarioDTO> findFuncionarioNomeCpf();
 }
