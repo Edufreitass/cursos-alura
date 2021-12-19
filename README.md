@@ -41,7 +41,7 @@
 - ✅[Java e JDBC: Trabalhando com um banco de dados](https://cursos.alura.com.br/course/jdbc-dao-persistencia)
 - ✅[Persistência com JPA: Introdução ao Hibernate](https://cursos.alura.com.br/course/persistencia-jpa-introducao-hibernate)
 - ✅[Java e JPA: Consultas avançadas, performance e modelos complexos](https://cursos.alura.com.br/course/java-jpa-consultas-avancadas-performance-modelos-complexos)
-- 🔨[Spring Data JPA: Repositórios, Consultas, Projeções e Specifications](https://cursos.alura.com.br/course/spring-data-jpa)
+- ✅[Spring Data JPA: Repositórios, Consultas, Projeções e Specifications](https://cursos.alura.com.br/course/spring-data-jpa)
 - ✅[Spring Boot API REST: Construa uma API](https://cursos.alura.com.br/course/spring-boot-api-rest)
 - ✅[Spring Boot API Rest: Segurança da API, Cache e Monitoramento](https://cursos.alura.com.br/course/spring-boot-seguranca-cache-monitoramento)
 - ✅[Spring Boot e Teste: Profiles, Testes e Deploy](https://cursos.alura.com.br/course/spring-boot-profiles-testes-deploy)
@@ -59,7 +59,7 @@
 
 ## Certificação Java
 "Prepare-se e aprenda tudo o que precisa para tirar a certificação Java OCJP I."
-- ⚠️[Certificação Java SE 7 Programmer I: O básico de Java](https://cursos.alura.com.br/course/certificacao-java-basico)
+- 🔨[Certificação Java SE 7 Programmer I: O básico de Java](https://cursos.alura.com.br/course/certificacao-java-basico)
 - ⚠️[Certificação Java SE 7 Programmer I: Tipos de Dados](https://cursos.alura.com.br/course/certificacao-java-tipos-de-dados)
 - ⚠️[Certificação Java SE 7 Programmer I: Operadores](https://cursos.alura.com.br/course/certificacao-java-operadores-decisao)
 - ⚠️[Certificação Java SE 7 Programmer I: Criando e usando Arrays](https://cursos.alura.com.br/course/certificacao-java-usando-arrays)
