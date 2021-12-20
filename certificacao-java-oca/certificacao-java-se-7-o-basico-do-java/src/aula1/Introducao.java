@@ -14,7 +14,7 @@ public class Introducao {
 
     // Não compila
     public static void main(String[] args) {
-        // System.out.println(id)
+        System.out.println(id)
         id = id + 1;
     }
 }

@@ -10,7 +10,7 @@ public class Exercicio2 {
 
     // O código não compila.
     public static void main(String[] x) {
-        // x = 200;
+        x = 200;
         System.out.println(x);
     }
 }
