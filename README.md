@@ -60,8 +60,8 @@
 ## Certificação Java
 "Prepare-se e aprenda tudo o que precisa para tirar a certificação Java OCJP I."
 - ✅[Certificação Java SE 7 Programmer I: O básico de Java](https://cursos.alura.com.br/course/certificacao-java-basico)
-- 🔨[Certificação Java SE 7 Programmer I: Tipos de Dados](https://cursos.alura.com.br/course/certificacao-java-tipos-de-dados)
-- ⚠️[Certificação Java SE 7 Programmer I: Operadores](https://cursos.alura.com.br/course/certificacao-java-operadores-decisao)
+- ✅[Certificação Java SE 7 Programmer I: Tipos de Dados](https://cursos.alura.com.br/course/certificacao-java-tipos-de-dados)
+- 🔨[Certificação Java SE 7 Programmer I: Operadores](https://cursos.alura.com.br/course/certificacao-java-operadores-decisao)
 - ⚠️[Certificação Java SE 7 Programmer I: Criando e usando Arrays](https://cursos.alura.com.br/course/certificacao-java-usando-arrays)
 - ⚠️[Certificação Java SE 7 Programmer I: Laços](https://cursos.alura.com.br/course/certificacao-java-loops)
 - ⚠️[Certificação Java SE 7 Programmer I: Métodos e encapsulamento](https://cursos.alura.com.br/course/certificacao-java-metodos-encapsulamento)
