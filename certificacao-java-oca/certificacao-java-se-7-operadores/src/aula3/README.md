@@ -1,4 +1,4 @@
-# Operadores de comparação (lógicos)
+# Operadores de comparação
 
 ## Comparadores
 
