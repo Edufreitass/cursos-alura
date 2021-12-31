@@ -73,6 +73,9 @@
 "Aprenda como a refatoração de código pode aumentar sua qualidade, sem alterar suas funcionalidades"
 - ✅[Refatoração em Java: Boas práticas no seu código](https://cursos.alura.com.br/course/introducao-refatoracao-java)
 
+## Http e Https
+- HTTP: Entendendo a web por baixo dos panos
+
 ## Certificação Docker DCA
 "Domine a principal e mais popular ferramenta de containers utilizada por times de tecnologia ao redor do mundo, prepare-se para a certificação Docker DCA e alavanque sua carreira!"
 - ✅[Docker: Criando containers sem dor de cabeça](https://cursos.alura.com.br/course/docker-e-docker-compose)
