@@ -83,5 +83,3 @@
 ## Desenvolvimento Pessoal
 "Desenvolva habilidades e hábitos chaves para o mercado"
 - ✅[Aprender a Aprender: Técnicas para seu autodesenvolvimento](https://cursos.alura.com.br/course/aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento)
-
-#### Never Stop Learning 🚀🚀🚀
