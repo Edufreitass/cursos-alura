@@ -61,7 +61,7 @@
 "Prepare-se e aprenda tudo o que precisa para tirar a certificação Java OCJP I."
 - ✅[Certificação Java SE 7 Programmer I: O básico de Java](https://cursos.alura.com.br/course/certificacao-java-basico)
 - ✅[Certificação Java SE 7 Programmer I: Tipos de Dados](https://cursos.alura.com.br/course/certificacao-java-tipos-de-dados)
-- 🔨[Certificação Java SE 7 Programmer I: Operadores](https://cursos.alura.com.br/course/certificacao-java-operadores-decisao)
+- ✅[Certificação Java SE 7 Programmer I: Operadores](https://cursos.alura.com.br/course/certificacao-java-operadores-decisao)
 - ⚠️[Certificação Java SE 7 Programmer I: Criando e usando Arrays](https://cursos.alura.com.br/course/certificacao-java-usando-arrays)
 - ⚠️[Certificação Java SE 7 Programmer I: Laços](https://cursos.alura.com.br/course/certificacao-java-loops)
 - ⚠️[Certificação Java SE 7 Programmer I: Métodos e encapsulamento](https://cursos.alura.com.br/course/certificacao-java-metodos-encapsulamento)
@@ -73,8 +73,11 @@
 "Aprenda como a refatoração de código pode aumentar sua qualidade, sem alterar suas funcionalidades"
 - ✅[Refatoração em Java: Boas práticas no seu código](https://cursos.alura.com.br/course/introducao-refatoracao-java)
 
+## Java Debug
+- 🔨[Java Debug: técnicas para entender e melhorar o seu código](https://cursos.alura.com.br/course/java-debug)
+
 ## Http e Https
-- HTTP: Entendendo a web por baixo dos panos
+- ⚠️[HTTP: Entendendo a web por baixo dos panos](https://cursos.alura.com.br/course/http-fundamentos)
 
 ## Certificação Docker DCA
 "Domine a principal e mais popular ferramenta de containers utilizada por times de tecnologia ao redor do mundo, prepare-se para a certificação Docker DCA e alavanque sua carreira!"
