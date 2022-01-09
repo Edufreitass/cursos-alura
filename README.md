@@ -62,7 +62,7 @@
 - ✅[Certificação Java SE 7 Programmer I: O básico de Java](https://cursos.alura.com.br/course/certificacao-java-basico)
 - ✅[Certificação Java SE 7 Programmer I: Tipos de Dados](https://cursos.alura.com.br/course/certificacao-java-tipos-de-dados)
 - ✅[Certificação Java SE 7 Programmer I: Operadores](https://cursos.alura.com.br/course/certificacao-java-operadores-decisao)
-- ⚠️[Certificação Java SE 7 Programmer I: Criando e usando Arrays](https://cursos.alura.com.br/course/certificacao-java-usando-arrays)
+- 🔨[Certificação Java SE 7 Programmer I: Criando e usando Arrays](https://cursos.alura.com.br/course/certificacao-java-usando-arrays)
 - ⚠️[Certificação Java SE 7 Programmer I: Laços](https://cursos.alura.com.br/course/certificacao-java-loops)
 - ⚠️[Certificação Java SE 7 Programmer I: Métodos e encapsulamento](https://cursos.alura.com.br/course/certificacao-java-metodos-encapsulamento)
 - ⚠️[Certificação Java SE 7 Programmer I: Relações entre classes](https://cursos.alura.com.br/course/certificacao-java-heranca)
@@ -74,7 +74,7 @@
 - ✅[Refatoração em Java: Boas práticas no seu código](https://cursos.alura.com.br/course/introducao-refatoracao-java)
 
 ## Java Debug
-- 🔨[Java Debug: técnicas para entender e melhorar o seu código](https://cursos.alura.com.br/course/java-debug)
+- ⚠️[Java Debug: técnicas para entender e melhorar o seu código](https://cursos.alura.com.br/course/java-debug)
 
 ## Http e Https
 - ⚠️[HTTP: Entendendo a web por baixo dos panos](https://cursos.alura.com.br/course/http-fundamentos)
